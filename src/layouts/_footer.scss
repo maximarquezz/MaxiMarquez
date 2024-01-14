@@ -1,4 +1,4 @@
-// _footer.scss
+/*_footer.scss*/
 @use '../global/utils' as utils;
 @use '../global/variables' as variables;
 @use '../components/button' as button;
@@ -8,8 +8,7 @@
   width: 100%;
   height: 40vh;
   background-color: variables.$second-bg-color;
-  display: flex;
-  justify-content: space-evenly;
+  @extend .flex-row_spc-evly_only;
   padding: 2rem;
 }
 
@@ -21,9 +20,7 @@
 }
 
 .footer__section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @extend .flex-col_spc-btw_only;
   width: 20%;
   height: 100%;
   font-size: 0.7rem;

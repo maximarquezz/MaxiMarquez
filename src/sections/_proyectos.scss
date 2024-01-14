@@ -49,6 +49,10 @@
     }
     
     .proyectos__img--first_photo{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.6))),
+        url(../../public/assets/images/interior.PNG);
+        background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/interior.PNG);
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url(../../public/assets/images/interior.PNG);
         background-position: center;
@@ -57,6 +61,10 @@
     }
     
     .proyectos__img--second_photo{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.6))),
+        url(../../public/assets/images/mmarquez.PNG);
+        background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/mmarquez.PNG);
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url(../../public/assets/images/mmarquez.PNG);
         background-position: center;
@@ -65,6 +73,10 @@
     }
     
     .proyectos__img--third_photo{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.6))),
+        url(../../public/assets/images/darkmode.PNG);
+        background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/darkmode.PNG);
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url(../../public/assets/images/darkmode.PNG);
         background-position: center;
@@ -77,7 +89,11 @@
         background: black;
         border-radius: 100px;
         padding: 10px;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
         cursor: pointer;
         @extend .transform_rotate;
         color: variables.$text-color;

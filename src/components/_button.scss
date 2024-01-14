@@ -1,4 +1,4 @@
-// _button.scss
+/*_button.scss*/
 @use '../global/variables' as variables;
 @use '../global/utils' as utils;
 
@@ -8,7 +8,8 @@
     padding: 15px;
     margin-top: 15px;
     width: 200px;
-    box-shadow: 0 0 10px variables.$main-color;
+    -webkit-box-shadow: 0 0 10px variables.$main-color;
+            box-shadow: 0 0 10px variables.$main-color;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -18,7 +19,8 @@
     @extend .border-rad_20px;
 
     &:hover{
-        box-shadow: 0 0 20px variables.$main-color;
+        -webkit-box-shadow: 0 0 20px variables.$main-color;
+                box-shadow: 0 0 20px variables.$main-color;
     }
 }
 
@@ -28,7 +30,8 @@
     width: 100%;
     @extend .border-rad_20px;
     @extend .transition_box-shadow;
-    box-shadow: 0 0 10px variables.$main-color;
+    -webkit-box-shadow: 0 0 10px variables.$main-color;
+            box-shadow: 0 0 10px variables.$main-color;
     cursor: pointer;
     text-decoration: none;
     color: variables.$bg-color;
@@ -38,6 +41,7 @@
     text-align: center;
 
     &:hover{
-        box-shadow: 0 0 20px variables.$main-color;
+        -webkit-box-shadow: 0 0 20px variables.$main-color;
+                box-shadow: 0 0 20px variables.$main-color;
     }
 }
