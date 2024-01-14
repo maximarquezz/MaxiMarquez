@@ -1,0 +1,63 @@
+/*_animations.scss*/
+@use '../global/_variables.scss' as variables;
+
+@keyframes profileMovement{
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorText{
+    0%{
+        color: variables.$text-color;
+    }
+    
+    50%{
+        color: variables.$main-color;
+        text-shadow: 0 0 20px variables.$main-color;
+    }
+
+    100%{
+        color: variables.$text-color;
+    }
+}
+
+@keyframes imageGlow{
+    0%{
+        filter: drop-shadow(0 0 30px variables.$main-color);
+        -webkit-filter: drop-shadow(0 0 30px variables.$main-color);
+    }
+    
+    50%{
+        filter: drop-shadow(0 0 20px variables.$main-color);
+        -webkit-filter: drop-shadow(0 0 20px variables.$main-color);
+}
+
+    100%{
+        filter: drop-shadow(0 0 30px variables.$main-color);
+        -webkit-filter: drop-shadow(0 0 30px variables.$main-color);
+    }
+}
+
+.animation_image-glow{
+    animation: imageGlow 4s infinite ease-in-out;
+    -webkit-animation: imageGlow 4s infinite ease-in-out;
+}
+
+.animation_color-text_6s{
+    animation: colorText 6s infinite ease-in-out;
+    -webkit-animation: colorText 6s infinite ease-in-out;
+}
+
+.animation_profile-movement_4s{
+    animation: profileMovement 4s infinite ease-in-out;
+    -webkit-animation: profileMovement 4s infinite ease-in-out;
+}

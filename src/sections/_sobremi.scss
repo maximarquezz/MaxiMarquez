@@ -1,0 +1,55 @@
+/*_sobremi.scss*/
+@use '../global/variables' as variables;
+@use '../global/utils' as utils;
+@use '../global/animations' as animations;
+@use '../components/card' as card;
+@use '../components/button' as button;
+
+#sobremi{
+    @extend .sections_w-and-h;
+    background-color: variables.$second-bg-color;
+    @extend .flex-row_spc-evly;
+}
+
+    .sobremi__img-container{
+        @extend .profileimg_container-properties;
+    }
+
+    .sobremi__img{
+        @extend .profileimg_properties;
+        @extend .animation_image-glow;
+    }
+
+    .sobremi__info{
+        height: 80vh;
+        padding: 1.4rem;
+        font-size: 3rem;
+        @extend .flex-col_center;
+    }
+
+    .sobremi__title{
+        text-align: center;
+        margin-bottom: 15px;
+
+        &--span{
+            @extend .animation_color-text_6s;
+        }
+    }
+
+    .sobremi__card{
+        @extend .card;
+    }
+
+    .sobremi__item{
+        padding: 10px;
+        list-style: none;
+        font-size: 1.1rem;
+
+        &--strong{
+            @extend .animation_color-text_6s;
+        }
+    }
+
+    .sobremi__more{
+        @extend .btn-secondary;
+    }

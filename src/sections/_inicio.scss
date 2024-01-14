@@ -1,0 +1,72 @@
+/*_inicio.scss*/
+@use '../global/_variables.scss' as variables;
+@use '../global/utils' as utils;
+@use '../global/animations' as animations;
+@use '../components/button' as button;
+
+#inicio{
+    width: 100vw;
+    height: 86vh;
+    @extend.flex-row_spc-evly;
+}
+
+    .inicio__sub-subtitle,
+    .inicio__title,
+    .inicio__subtitle{
+        padding: 4px;
+    }
+
+    .inicio__sub-subtitle{
+        font-size: 1.3rem;
+    }
+    
+    .inicio__title{
+        font-size: 3rem;
+    }
+    
+    .inicio__subtitle{
+        font-size: 1.7rem;
+        
+        &-strong{
+            @extend .animation_color-text_6s;
+        }
+    }
+
+    .inicio__parrafo,
+    .inicio__social{
+        margin-top: 15px;
+    }
+    
+    .inicio__parrafo{
+        line-height: 1.5rem;
+        font-size: 1rem;
+        padding: 6px;
+    }
+    
+    .inicio__red{
+        color: variables.$main-color;
+        padding: 6px;
+        @extend .transition_color-textshadow;
+
+        &:hover{
+            text-shadow: 0 0 20px variables.$main-color;
+        }
+    }
+
+    .inicio__red-link{
+        font-size: 2.5rem;
+    }
+    
+    .inicio__downloadCVbutton{
+        @extend .btn;
+        padding: 15px;
+    }
+    
+    .inicio__perfilimg{
+        @extend .profileimg_container-properties;
+    }
+    
+    .inicio__perfilimg-img{
+        @extend .profileimg_properties;
+        @extend .animation_image-glow;
+    }

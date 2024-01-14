@@ -1,0 +1,43 @@
+// _button.scss
+@use '../global/variables' as variables;
+@use '../global/utils' as utils;
+
+.btn{
+    background-color: variables.$main-color;
+    color: variables.$bg-color;
+    padding: 15px;
+    margin-top: 15px;
+    width: 200px;
+    box-shadow: 0 0 10px variables.$main-color;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    @extend.transition_box-shadow;
+    @extend .border-rad_20px;
+
+    &:hover{
+        box-shadow: 0 0 20px variables.$main-color;
+    }
+}
+
+.btn-secondary{
+    background-color: variables.$main-color;
+    padding: 15px;
+    width: 100%;
+    @extend .border-rad_20px;
+    @extend .transition_box-shadow;
+    box-shadow: 0 0 10px variables.$main-color;
+    cursor: pointer;
+    text-decoration: none;
+    color: variables.$bg-color;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+
+    &:hover{
+        box-shadow: 0 0 20px variables.$main-color;
+    }
+}

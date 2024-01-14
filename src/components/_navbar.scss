@@ -1,0 +1,39 @@
+/*_navbar.scss*/
+@use '../global/_variables.scss' as variables;
+@use '../global/utils' as utils;
+
+.nav{
+  width: 80vw;
+  height: 14vh;
+  margin: auto;
+  padding: 1.4rem;
+  background-color: variables.$bg-color;
+  @extend .flex-row_spc-btw;
+}
+
+  .nav__subtitle{
+    font-size: 1.8rem;
+    @extend .cursor-def_userslct-none;
+  }
+
+  .nav__ul{
+    display: flex;
+  }
+
+  .nav__a{
+    text-decoration: none;
+    color: variables.$text-color;
+    @extend .transition_color-textshadow;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+
+    &:hover{
+      color: variables.$main-color;
+      text-shadow: 0px 0px 30px variables.$text-color;
+    }
+  }
+
+  .active{ 
+    color: variables.$main-color;
+    text-shadow: 0px 0px 30px variables.$text-color;
+  }

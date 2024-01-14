@@ -1,0 +1,21 @@
+//base
+@use 'base/reset' as reset;
+
+//components
+@use 'components/button' as button;
+@use 'components/card' as card;
+@use 'components/navbar' as navbar;
+
+//global
+@use 'global/_global' as global;
+@use 'global/utils' as utils;
+@use 'global/_variables.scss' as variables;
+@use 'global/icons' as icons;
+
+//sections
+@use 'sections/inicio' as inicio;
+@use 'sections/sobremi' as sobremi;
+@use 'sections/proyectos' as proyectos;
+@use 'sections/habilidades' as habilidades;
+@use 'sections/contacto' as contacto;
+@use 'layouts/footer' as footer;

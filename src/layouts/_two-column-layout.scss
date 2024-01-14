@@ -1,0 +1,13 @@
+// _two-column-layout.scss
+@import 'sidebar';
+@import 'main-content';
+
+// Puedes ajustar el ancho de la barra lateral y el contenido principal según tus necesidades
+.two-column-layout {
+  .sidebar {
+    width: 30%;
+  }
+  .main-content {
+    width: 70%;
+  }
+}

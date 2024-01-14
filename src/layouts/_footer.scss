@@ -1,0 +1,79 @@
+// _footer.scss
+@use '../global/utils' as utils;
+@use '../global/variables' as variables;
+@use '../components/button' as button;
+
+.footer__allcontainer{
+  border-top: 3px solid variables.$main-color;
+  width: 100%;
+  height: 40vh;
+  background-color: variables.$second-bg-color;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.footer__line-between{
+  width: 2px;
+  height: 100%;
+  background-color: variables.$bg-color;
+  @extend .border-rad_20px;
+}
+
+.footer__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 100%;
+  font-size: 0.7rem;
+}
+
+.footer__title{
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer__social,
+.footer__help,
+.footer__curriculumtext,
+.footer__secciones{
+  text-decoration: none;
+  color: variables.$smalltext-color;
+  @extend .transition_color-textshadow;
+}
+
+.footer__social:hover,
+.footer__help:hover,
+.footer__secciones:hover{
+  color: variables.$main-color;
+  text-shadow: 0 0 20px variables.$main-color;
+}
+
+.footer__help i{
+  margin-right: 10px;
+  padding: 10px;
+  background-color: variables.$bg-color;
+  @extend .border-rad_10px;
+}
+
+.footer__curriculumtext{
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.footer__curriculumbutton{
+  @extend .btn;
+}
+
+.footer__copy{
+  @extend .flex-row_spc-evly;
+  background-color: #2c333e;
+}
+
+.footer__copytext{
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  color: variables.$smalltext-color;
+}

@@ -1,0 +1,105 @@
+/*_proyectos.scss*/
+@use '../global/animations' as animations;
+@use '../global/utils' as utils;
+@use '../global/variables' as variables;
+@use '../components/card' as card;
+@use '../components/button' as button;
+
+#proyectos{
+    @extend .sections_w-and-h;
+    @extend .flex-col_spc-evly;
+    background-color: variables.$bg-color;
+}
+
+    .proyectos__sub-subtitle{
+        font-size: 3rem;
+
+        &--span{
+            @extend .animation_color-text_6s;
+        }
+    }
+    
+    .proyectos__container{
+        @extend .flex-row_spc-evly;
+        height: 75vh;
+    }
+    
+    .proyectos__card{
+        @extend .card--proyects;
+        @extend .flex-col_spc-btw;
+    }
+    
+    .proyectos__title{
+        @extend .border-rad_topLR_20px;
+        color: variables.$second-bg-color;
+        font-weight: bold;
+        background-color: variables.$main-color;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .proyectos__img{
+        width: 100%;
+        height: 80vh;
+        @extend .flex-row_center;
+        @extend .border-rad_bottomLR_20px;
+        border-bottom: 3px solid variables.$main-color;
+    }
+    
+    .proyectos__img--first_photo{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/interior.PNG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .proyectos__img--second_photo{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/mmarquez.PNG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .proyectos__img--third_photo{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../../public/assets/images/darkmode.PNG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .proyectos__img--signomas{
+        font-size: 3rem;
+        background: black;
+        border-radius: 100px;
+        padding: 10px;
+        transition: transform 0.5s;
+        cursor: pointer;
+        @extend .transform_rotate;
+        color: variables.$text-color;
+        text-decoration: none;
+
+        &:hover{
+            @extend .transform_rotate-hover;
+        }
+    }
+
+    .proyectos__card-info{
+        @extend .w-and-h_100percent;
+        @extend .flex-col_spc-btw;
+    }
+    
+    .proyectos__text{
+        font-size: 1rem;
+        padding: 15px;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+
+    .proyectos__button{
+        @extend .btn-secondary;
+    }
