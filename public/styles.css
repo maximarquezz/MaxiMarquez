@@ -551,7 +551,7 @@ input {
     display: none;
   }
   .nav__ul.visible {
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
     display: block;
@@ -564,8 +564,8 @@ input {
     color: #fff;
     z-index: 300;
     display: block;
-    position: sticky;
-    float: right;
+    position: fixed;
+    margin-left: 220px;
   }
 }
 /*_global.scss*/

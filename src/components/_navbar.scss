@@ -114,7 +114,7 @@
     display: none;
 
     &.visible{
-      position: sticky;
+      position: fixed;
       left: 0;
       top: 0;
       display: block;
@@ -129,8 +129,8 @@
     color: variables.$text-color;
     z-index: 300;
     display: block;
-    position: sticky;
-    float: right;
+    position: fixed;
+    margin-left: 220px;
   }
 
 }
