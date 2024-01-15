@@ -72,12 +72,41 @@
     }
 
 // Media query para 320x535
-@media screen and (min-width: 320px) and (min-height: 535px){
+@media screen and (max-width: 320px){
 
     #inicio{
         flex-wrap: wrap;
+        height: 100vh;
     }
 
-    
+    .inicio__perfilimg{
+        display: none;
+    }
+
+    .inicio__presentation{
+        padding: 1.5rem;
+    }
+
+    .inicio__sub-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .inicio__subtitle{
+        font-size: 1.3rem;
+    }
+
+    .inicio__social{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+
+    .inicio__red-link{
+        font-size: 3rem;
+    }
+
+    .inicio__downloadCVbutton{
+        width: 100%;
+    }
 
 }
