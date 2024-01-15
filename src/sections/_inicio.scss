@@ -70,3 +70,14 @@
         @extend .profileimg_properties;
         @extend .animation_image-glow;
     }
+
+// Media query para 320x535
+@media screen and (min-width: 320px) and (min-height: 535px){
+
+    #inicio{
+        flex-wrap: wrap;
+    }
+
+    
+
+}

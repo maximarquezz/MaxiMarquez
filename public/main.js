@@ -18,3 +18,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     toggleImages();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerCheckbox = document.getElementById("burger");
+  const navUl = document.querySelector(".nav__ul");
+
+  if (burgerCheckbox && navUl) {
+    burgerCheckbox.addEventListener("change", function() {
+      navUl.classList.toggle("visible", burgerCheckbox.checked);
+    });
+  } else {
+    console.error('No se encontró el elemento con el id "burger" o "nav__ul".');
+  }
+});

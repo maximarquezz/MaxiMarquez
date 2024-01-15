@@ -480,6 +480,94 @@ input {
   text-shadow: 0px 0px 30px #fff;
 }
 
+.burger {
+  filter: invert(1);
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .nav,
+  .nav__ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .nav__ul {
+    display: none;
+  }
+  .nav__ul.visible {
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0ef;
+    z-index: 200;
+  }
+  .burger {
+    color: #fff;
+    z-index: 300;
+    display: block;
+    position: sticky;
+    float: right;
+  }
+}
 /*_global.scss*/
 /*_fonts.scss*/
 @font-face {
@@ -696,6 +784,11 @@ progress {
   padding: 15px;
 }
 
+@media screen and (min-width: 320px) and (min-height: 535px) {
+  #inicio {
+    flex-wrap: wrap;
+  }
+}
 /*_sobremi.scss*/
 #sobremi {
   background-color: #323946;
@@ -745,6 +838,8 @@ progress {
 }
 
 .proyectos__img--first_photo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../public/assets/images/interior.PNG);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/interior.PNG);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/interior.PNG);
   background-position: center;
   background-size: cover;
@@ -752,6 +847,8 @@ progress {
 }
 
 .proyectos__img--second_photo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../public/assets/images/mmarquez.PNG);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/mmarquez.PNG);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/mmarquez.PNG);
   background-position: center;
   background-size: cover;
@@ -759,6 +856,8 @@ progress {
 }
 
 .proyectos__img--third_photo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../public/assets/images/darkmode.PNG);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/darkmode.PNG);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/darkmode.PNG);
   background-position: center;
   background-size: cover;
@@ -770,7 +869,11 @@ progress {
   background: black;
   border-radius: 100px;
   padding: 10px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
@@ -895,6 +998,22 @@ progress {
 .contacto__form input:focus,
 .contacto__form textarea:focus {
   outline: none;
+}
+.contacto__form input:focus::-webkit-input-placeholder,
+.contacto__form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.contacto__form input:focus::-moz-placeholder,
+.contacto__form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+.contacto__form input:focus:-ms-input-placeholder,
+.contacto__form textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.contacto__form input:focus::-ms-input-placeholder,
+.contacto__form textarea:focus::-ms-input-placeholder {
+  color: transparent;
 }
 .contacto__form input:focus::placeholder,
 .contacto__form textarea:focus::placeholder {
