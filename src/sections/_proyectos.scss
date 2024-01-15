@@ -119,3 +119,39 @@
     .proyectos__button{
         @extend .btn-secondary;
     }
+
+@media screen and (max-width: 425px){
+
+    #proyectos{
+        flex-wrap: wrap;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .proyectos__sub-subtitle{
+        font-size: 2rem;
+    }
+
+    .proyectos__container{
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    .proyectos__card{
+        width: 100%;
+        height: 70%;
+    }
+
+    .proyectos__card-info{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .proyectos__text{
+        display: none;
+    }
+
+}
