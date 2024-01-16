@@ -548,9 +548,6 @@ input {
     padding: 1rem;
     height: fit-content;
     background-color: grey;
-    position: fixed;
-    width: 100vw;
-    z-index: 100;
   }
   .nav__ul {
     display: none;
@@ -1121,18 +1118,23 @@ progress {
 }
 @media screen and (max-width: 425px) {
   #contacto {
-    padding: 1.4rem;
+    height: 100vh;
+    padding: 0 1.4rem 1.4rem 1.4rem;
   }
   .contacto__title {
     font-size: 2rem;
+    margin: 20px 0;
   }
   .contacto__container {
-    flex-wrap: wrap;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
   .contacto__otrasredes {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     padding: 0;
   }
@@ -1150,21 +1152,31 @@ progress {
     display: none;
   }
   .contacto__form {
-    width: 100vw;
-    height: fit-content;
+    width: 100%;
+    height: auto;
     padding: 10px;
+  }
+  .contacto__form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
   }
   .contacto__form label {
     font-size: 0.9rem;
+    width: 100%;
   }
   .contacto__form input,
   .contacto__form textarea {
+    width: 100%;
     font-size: 0.7rem;
     padding: 7px;
     margin: 5px 0;
   }
   .contacto__form textarea {
-    height: 100px;
+    height: 150px;
   }
   .contacto__form button {
     padding: 5px;
