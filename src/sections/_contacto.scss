@@ -124,3 +124,69 @@
         @extend .animation_color-text_6s;
     }
 }
+
+@media screen and (max-width: 425px){
+
+    #contacto{
+        padding: 1.4rem;
+    }
+
+    .contacto__title{
+        font-size: 2rem;
+    }
+
+    .contacto__container{
+        flex-wrap: wrap;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .contacto__otrasredes{
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .contacto__otrasredes i{
+        font-size: 0.9rem;
+    }
+
+    .contacto__socialcard{
+        padding: 0 10px 0 0;
+        font-size: 0.8rem;
+    }
+
+    .contacto__socialcard:last-child{
+        display: none;
+    }
+
+    .line-between{
+        display: none;
+    }
+
+    .contacto__form{
+        width: 100vw;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .contacto__form label{
+        font-size: 0.9rem;
+    }
+
+    .contacto__form input,
+    .contacto__form textarea{
+        font-size: 0.7rem;
+        padding: 7px;
+        margin: 5px 0;
+    }
+    
+    .contacto__form textarea{
+        height: 100px;
+    }
+
+    .contacto__form button{
+        padding: 5px;
+    }
+
+}

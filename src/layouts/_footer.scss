@@ -12,6 +12,11 @@
   padding: 2rem;
 }
 
+.footer a{
+  display: inline-block;
+  width: fit-content;
+}
+
 .footer__line-between{
   width: 2px;
   height: 100%;
@@ -24,6 +29,7 @@
   width: 20%;
   height: 100%;
   font-size: 0.7rem;
+  padding: 10px 0;
 }
 
 .footer__title{
@@ -73,4 +79,42 @@
   text-align: center;
   padding: 1rem;
   color: variables.$smalltext-color;
+}
+
+@media screen and (max-width: 425px){
+
+  .footer{
+    height: fit-content;
+  }
+
+  .footer__allcontainer{
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 1.4rem;
+  }
+
+  .footer__section{
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .footer__line-between{
+    display: none;
+  }
+
+  .footer__secciones,
+  .footer__social,
+  .footer__help{
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+
+  .footer__curriculumtext{
+    line-height: 1rem;
+  }
+
+  .footer__copytext{
+    font-size: 0.7rem;
+  }
+
 }

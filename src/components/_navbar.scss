@@ -109,7 +109,10 @@
       flex-wrap: wrap;
       padding: 1rem;
       height: fit-content;
-      border-bottom: 2px solid variables.$main-color;
+      background-color: grey;
+      position: fixed;
+      width: 100vw;
+      z-index: 100;
   }
 
   .nav__ul{

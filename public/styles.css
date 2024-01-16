@@ -547,7 +547,10 @@ input {
     flex-wrap: wrap;
     padding: 1rem;
     height: fit-content;
-    border-bottom: 2px solid #0ef;
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
   }
   .nav__ul {
     display: none;
@@ -836,7 +839,7 @@ progress {
   list-style: none;
   font-size: 1.1rem;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #sobremi {
     flex-wrap: wrap;
     height: fit-content;
@@ -934,6 +937,7 @@ progress {
     flex-wrap: wrap;
     height: 100vh;
     justify-content: space-evenly;
+    padding: 1.4rem;
   }
   .proyectos__sub-subtitle {
     font-size: 2rem;
@@ -942,7 +946,7 @@ progress {
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 2rem;
+    overflow: hidden;
   }
   .proyectos__card {
     width: 100%;
@@ -1017,6 +1021,11 @@ progress {
   width: 500px;
 }
 
+@media screen and (max-width: 425px) {
+  .habilidades__img {
+    display: none;
+  }
+}
 /*_contacto.scss*/
 #contacto {
   background-color: #1f242d;
@@ -1110,6 +1119,57 @@ progress {
 .contacto__title {
   font-size: 3rem;
 }
+@media screen and (max-width: 425px) {
+  #contacto {
+    padding: 1.4rem;
+  }
+  .contacto__title {
+    font-size: 2rem;
+  }
+  .contacto__container {
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: space-between;
+  }
+  .contacto__otrasredes {
+    width: 100vw;
+    height: fit-content;
+    padding: 0;
+  }
+  .contacto__otrasredes i {
+    font-size: 0.9rem;
+  }
+  .contacto__socialcard {
+    padding: 0 10px 0 0;
+    font-size: 0.8rem;
+  }
+  .contacto__socialcard:last-child {
+    display: none;
+  }
+  .line-between {
+    display: none;
+  }
+  .contacto__form {
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+  }
+  .contacto__form label {
+    font-size: 0.9rem;
+  }
+  .contacto__form input,
+  .contacto__form textarea {
+    font-size: 0.7rem;
+    padding: 7px;
+    margin: 5px 0;
+  }
+  .contacto__form textarea {
+    height: 100px;
+  }
+  .contacto__form button {
+    padding: 5px;
+  }
+}
 /*_footer.scss*/
 .footer__allcontainer {
   border-top: 3px solid #0ef;
@@ -1117,6 +1177,11 @@ progress {
   height: 40vh;
   background-color: #323946;
   padding: 2rem;
+}
+
+.footer a {
+  display: inline-block;
+  width: fit-content;
 }
 
 .footer__line-between {
@@ -1129,6 +1194,7 @@ progress {
   width: 20%;
   height: 100%;
   font-size: 0.7rem;
+  padding: 10px 0;
 }
 
 .footer__title {
@@ -1171,6 +1237,36 @@ progress {
   text-align: center;
   padding: 1rem;
   color: #8a9094;
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    height: fit-content;
+  }
+  .footer__allcontainer {
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 1.4rem;
+  }
+  .footer__section {
+    width: 100vw;
+    height: fit-content;
+  }
+  .footer__line-between {
+    display: none;
+  }
+  .footer__secciones,
+  .footer__social,
+  .footer__help {
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+  .footer__curriculumtext {
+    line-height: 1rem;
+  }
+  .footer__copytext {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
