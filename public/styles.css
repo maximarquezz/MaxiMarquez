@@ -570,13 +570,24 @@ input {
   }
   .nav__ul.visible {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     display: block;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
-    background-color: #0ef;
+    background: linear-gradient(to right, #1f242d, #323946);
     z-index: 200;
+  }
+  .nav__li {
+    border-bottom: 1px solid white;
+  }
+  .nav__a {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  .nav__subtitle {
+    display: none;
   }
   .burger {
     color: #fff;
@@ -1196,6 +1207,7 @@ progress {
   .contacto__socialcard {
     padding: 0 10px 0 0;
     font-size: 0.8rem;
+    margin: 2px 0;
   }
   .contacto__socialcard:last-child {
     display: none;

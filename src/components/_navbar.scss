@@ -116,14 +116,28 @@
 
     &.visible{
       position: fixed;
-      left: 0;
+      right: 0;
       top: 0;
       display: block;
-      width: 100vw;
+      width: 50vw;
       height: 100vh;
-      background-color: variables.$main-color;
+      background: linear-gradient(to right, variables.$bg-color, variables.$second-bg-color);
       z-index: 200;
     }
+  }
+
+  .nav__li{
+    border-bottom: 1px solid white;
+  }
+
+  .nav__a{
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+
+  .nav__subtitle{
+    display: none;
   }
 
   .burger{

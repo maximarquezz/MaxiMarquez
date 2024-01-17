@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerCheckbox.addEventListener("change", function() {
       navUl.classList.toggle("visible", burgerCheckbox.checked);
     });
+
+    // Agregar evento de clic a los elementos li
+    const navLiElements = document.querySelectorAll('.nav__li');
+    navLiElements.forEach(function(li) {
+      li.addEventListener('click', function() {
+        // Cerrar el panel de navegación al hacer clic en un elemento li
+        navUl.classList.remove("visible");
+        burgerCheckbox.checked = false;
+      });
+    });
   } else {
     console.error('No se encontró el elemento con el id "burger" o "nav__ul".');
   }
