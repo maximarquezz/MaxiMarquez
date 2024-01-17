@@ -558,6 +558,10 @@ input {
   left: 5px;
 }
 
+.invisible {
+  display: none;
+}
+
 @media screen and (max-width: 425px) {
   .nav,
   .nav__ul {
@@ -581,9 +585,14 @@ input {
   .nav__li {
     border-bottom: 1px solid white;
   }
+  .invisible {
+    display: inline;
+    margin-right: 8px;
+    font-size: 1rem;
+  }
   .nav__a {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 3rem;
   }
   .nav__subtitle {
@@ -882,7 +891,7 @@ progress {
   }
   .sobremi__item {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     padding: 2px;
   }
 }
@@ -1084,6 +1093,9 @@ progress {
   }
   .habilidades__img {
     display: none;
+  }
+  .habilidades__carddescription {
+    margin: 4px 0;
   }
 }
 /*_contacto.scss*/

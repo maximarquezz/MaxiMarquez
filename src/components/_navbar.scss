@@ -101,6 +101,10 @@
     left: 5px;
   }
 
+  .invisible{
+    display: none;
+  }
+
 // Media query para 320x535
 @media screen and (max-width: 425px){
 
@@ -130,9 +134,15 @@
     border-bottom: 1px solid white;
   }
 
+  .invisible{
+    display: inline;
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+
   .nav__a{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 3rem;
   }
 
