@@ -127,6 +127,7 @@
       height: 100vh;
       background: linear-gradient(to right, variables.$bg-color, variables.$second-bg-color);
       z-index: 200;
+      outline: 500px solid rgba(0,0,0,0.7);
     }
   }
 

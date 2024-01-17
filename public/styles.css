@@ -581,6 +581,7 @@ input {
     height: 100vh;
     background: linear-gradient(to right, #1f242d, #323946);
     z-index: 200;
+    outline: 500px solid rgba(0, 0, 0, 0.7);
   }
   .nav__li {
     border-bottom: 1px solid white;
@@ -837,17 +838,25 @@ progress {
   }
   .inicio__subtitle {
     font-size: 1.3rem;
+    margin-top: 5px;
+  }
+  .inicio__title {
+    margin-top: 5px;
   }
   .inicio__social {
     display: flex;
     justify-content: space-between;
-    margin-top: 7px;
+    margin-top: 15px;
   }
   .inicio__red-link {
     font-size: 3.5rem;
   }
   .inicio__downloadCVbutton {
     width: 100%;
+    margin-top: 20px;
+  }
+  .inicio__parrafo {
+    margin-top: 20px;
   }
 }
 /*_sobremi.scss*/
@@ -1001,10 +1010,7 @@ progress {
     align-items: center;
   }
   .proyectos__text {
-    display: none;
-  }
-  .proyectos__button {
-    display: none;
+    line-height: 1.3rem;
   }
 }
 /*_habilidades.scss*/
@@ -1077,7 +1083,7 @@ progress {
 @media screen and (max-width: 425px) {
   #habilidades {
     height: fit-content;
-    padding: 1.7rem;
+    padding: 1.7rem 1.7rem 0 1.7rem;
   }
   .habilidades__title {
     font-size: 1.8rem;
@@ -1091,8 +1097,38 @@ progress {
   .habilidades__principal {
     width: 100%;
   }
+  .habilidades__code {
+    height: 300px;
+    width: 100%;
+  }
   .habilidades__img {
-    display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+  }
+  .habilidades__img:nth-child(1) {
+    width: 220px;
+  }
+  .habilidades__img:nth-child(2) {
+    width: 160px;
+  }
+  .habilidades__img:nth-child(3) {
+    width: 240px;
+  }
+  .habilidades__img:nth-child(4) {
+    width: 200px;
+  }
+  .habilidades__img:nth-child(5) {
+    width: 130px;
+  }
+  .habilidades__img:nth-child(6) {
+    width: 230px;
+  }
+  .habilidades__img:nth-child(7) {
+    width: 300px;
   }
   .habilidades__carddescription {
     margin: 4px 0;
@@ -1231,7 +1267,7 @@ progress {
     margin-top: 15px;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 1.2rem;
   }
   .contacto__form form {
     display: flex;
@@ -1242,7 +1278,7 @@ progress {
     width: 100%;
   }
   .contacto__form label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 100%;
   }
   .contacto__form input,
@@ -1250,13 +1286,13 @@ progress {
     width: 100%;
     font-size: 0.7rem;
     padding: 7px;
-    margin: 8px 0;
+    margin: 10px 0;
   }
   .contacto__form textarea {
     height: 150px;
   }
   .contacto__form button {
-    padding: 5px;
+    padding: 10px;
     font-size: 0.7rem;
   }
 }

@@ -90,12 +90,17 @@
 
     .inicio__subtitle{
         font-size: 1.3rem;
+        margin-top: 5px;
+    }
+
+    .inicio__title{
+        margin-top: 5px;
     }
 
     .inicio__social{
         display: flex;
         justify-content: space-between;
-        margin-top: 7px;
+        margin-top: 15px;
     }
 
     .inicio__red-link{
@@ -104,6 +109,11 @@
 
     .inicio__downloadCVbutton{
         width: 100%;
+        margin-top: 20px;
+    }
+    
+    .inicio__parrafo{
+        margin-top: 20px;
     }
 
 }

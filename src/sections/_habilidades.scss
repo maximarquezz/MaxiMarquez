@@ -93,7 +93,7 @@
 
     #habilidades{
         height: fit-content;
-        padding: 1.7rem;
+        padding: 1.7rem 1.7rem 0 1.7rem;
     }
 
     .habilidades__title{
@@ -111,15 +111,45 @@
         width: 100%;
     }
 
-    // .habilidades__img{
-    //     position: relative;
-    //     width: 100%;
-    //     height: fit-content;
-    // }
+    .habilidades__code{
+        height: 300px;
+        width: 100%;
+    }
 
     .habilidades__img{
-        display: none;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+
+        &:nth-child(1){
+            width: 220px;
+        }
+        &:nth-child(2){
+            width: 160px;
+        }
+        &:nth-child(3){
+            width: 240px;
+        }
+        &:nth-child(4){
+            width: 200px;
+        }
+        &:nth-child(5){
+            width: 130px;
+        }
+        &:nth-child(6){
+            width: 230px;
+        }
+        &:nth-child(7){
+            width: 300px;
+        }
     }
+
+    // .habilidades__img{
+    //     display: none;
+    // }
 
     .habilidades__carddescription{
         margin: 4px 0;
