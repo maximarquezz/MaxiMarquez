@@ -807,7 +807,7 @@ progress {
   #inicio {
     flex-wrap: wrap;
     height: fit-content;
-    padding: 1.4rem;
+    padding: 1.7rem;
   }
   .inicio__perfilimg {
     display: none;
@@ -837,7 +837,7 @@ progress {
 
 .sobremi__info {
   height: 80vh;
-  padding: 1.4rem;
+  padding: 1.7rem;
   font-size: 3rem;
 }
 
@@ -956,7 +956,7 @@ progress {
     flex-wrap: wrap;
     height: fit-content;
     justify-content: space-evenly;
-    padding: 1.4rem;
+    padding: 1.7rem;
   }
   .proyectos__sub-subtitle {
     font-size: 2rem;
@@ -1057,7 +1057,7 @@ progress {
 @media screen and (max-width: 425px) {
   #habilidades {
     height: fit-content;
-    padding: 1.4rem;
+    padding: 1.7rem;
   }
   .habilidades__title {
     font-size: 1.8rem;
@@ -1171,7 +1171,7 @@ progress {
 @media screen and (max-width: 425px) {
   #contacto {
     height: fit-content;
-    padding: 0 1.4rem 1.4rem 1.4rem;
+    padding: 0 1.7rem 1.7rem 1.7rem;
   }
   .contacto__title {
     font-size: 2rem;
@@ -1226,13 +1226,14 @@ progress {
     width: 100%;
     font-size: 0.7rem;
     padding: 7px;
-    margin: 5px 0;
+    margin: 8px 0;
   }
   .contacto__form textarea {
     height: 150px;
   }
   .contacto__form button {
     padding: 5px;
+    font-size: 0.7rem;
   }
 }
 /*_footer.scss*/
