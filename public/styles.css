@@ -107,6 +107,18 @@ input {
     color: #fff;
   }
 }
+@keyframes colorText_two {
+  0% {
+    color: #0ef;
+  }
+  50% {
+    color: #0ef;
+    text-shadow: 0 0 20px #0ef;
+  }
+  100% {
+    color: #0ef;
+  }
+}
 @-webkit-keyframes imageGlow {
   0% {
     filter: drop-shadow(0 0 30px #0ef);
@@ -140,18 +152,23 @@ input {
   -webkit-animation: imageGlow 4s infinite ease-in-out;
 }
 
-.animation_color-text_6s, .contacto__form label, .contacto__title--span, #habilidades .habilidades__title--span, .proyectos__sub-subtitle--span, .sobremi__title--span, .sobremi__item--strong, .inicio__subtitle-strong, .material-symbols-outlined:last-of-type,
+.animation_color-text_6s, .contacto__form label, .contacto__title--span, .habilidades__title--span, .proyectos__sub-subtitle--span, .sobremi__title--span, .inicio__subtitle-strong, .material-symbols-outlined:last-of-type,
 .fonts-icons:last-of-type {
   animation: colorText 6s infinite ease-in-out;
   -webkit-animation: colorText 6s infinite ease-in-out;
 }
 
-.animation_profile-movement_4s, #habilidades .habilidades__img, .profileimg_container-properties, .sobremi__img-container, .inicio__perfilimg {
+.animation_color-text_two_6s, .sobremi__item--strong {
+  animation: colorText_two 6s infinite ease-in-out;
+  -webkit-animation: colorText_two 6s infinite ease-in-out;
+}
+
+.animation_profile-movement_4s, .habilidades__img, .profileimg_container-properties, .sobremi__img-container, .inicio__perfilimg {
   animation: profileMovement 4s infinite ease-in-out;
   -webkit-animation: profileMovement 4s infinite ease-in-out;
 }
 
-.flex-row_spc-btw, .contacto__socialcard, #habilidades .habilidades__textcontainer, .nav {
+.flex-row_spc-btw, .contacto__socialcard, .habilidades__textcontainer, .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +184,7 @@ input {
   flex-direction: row;
 }
 
-.flex-col_spc-btw, .contacto__otrasredes, #habilidades .habilidades__principal, .proyectos__card, .proyectos__card-info {
+.flex-col_spc-btw, .contacto__otrasredes, .habilidades__principal, .proyectos__card, .proyectos__card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +200,7 @@ input {
   flex-direction: column;
 }
 
-.flex-row_spc-evly, .footer__copy, .contacto__container, #habilidades .habilidades__container, .proyectos__container, #sobremi, #inicio {
+.flex-row_spc-evly, .footer__copy, .contacto__container, .habilidades__container, .proyectos__container, #sobremi, #inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +216,7 @@ input {
   flex-direction: row;
 }
 
-.flex-col_spc-evly, #contacto, .contacto__form, #habilidades, #habilidades .habilidades__code, #proyectos {
+.flex-col_spc-evly, #contacto, .contacto__form, #habilidades, .habilidades__code, #proyectos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +328,7 @@ input {
   -o-transform: rotate(90deg) scale(1.2);
 }
 
-.border-rad_20px, .footer__line-between, .contacto__socialcard, .line-between, .contacto__form, #habilidades .habilidades__principal, #habilidades .habilidades__carddescription, ::-webkit-scrollbar-thumb, ::-webkit-progress-bar, ::-webkit-progress-value, .card, .card--proyects, .sobremi__card, .proyectos__card, .btn, .btn-secondary, .footer__curriculumbutton, .inicio__downloadCVbutton, .contacto__form button, .proyectos__button, .sobremi__more {
+.border-rad_20px, .footer__line-between, .contacto__socialcard, .line-between, .contacto__form, .habilidades__principal, .habilidades__carddescription, ::-webkit-scrollbar-thumb, ::-webkit-progress-bar, ::-webkit-progress-value, .card, .card--proyects, .sobremi__card, .proyectos__card, .btn, .btn-secondary, .footer__curriculumbutton, .inicio__downloadCVbutton, .contacto__form button, .proyectos__button, .sobremi__more {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -428,7 +445,7 @@ input {
 }
 
 /*_card.scss*/
-.card, #habilidades .habilidades__principal, .sobremi__card {
+.card, .habilidades__principal, .sobremi__card {
   width: 100%;
   background-color: #1f242d;
   padding: 20px;
@@ -547,7 +564,6 @@ input {
     flex-wrap: wrap;
     padding: 1rem;
     height: fit-content;
-    background-color: grey;
   }
   .nav__ul {
     display: none;
@@ -567,8 +583,8 @@ input {
     z-index: 300;
     display: block;
     position: fixed;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
   }
 }
 /*_global.scss*/
@@ -790,13 +806,11 @@ progress {
 @media screen and (max-width: 425px) {
   #inicio {
     flex-wrap: wrap;
-    height: 100vh;
+    height: fit-content;
+    padding: 1.4rem;
   }
   .inicio__perfilimg {
     display: none;
-  }
-  .inicio__presentation {
-    padding: 1.5rem;
   }
   .inicio__sub-subtitle {
     font-size: 1.2rem;
@@ -810,7 +824,7 @@ progress {
     margin-top: 7px;
   }
   .inicio__red-link {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .inicio__downloadCVbutton {
     width: 100%;
@@ -840,12 +854,20 @@ progress {
   #sobremi {
     flex-wrap: wrap;
     height: fit-content;
+    padding: 1.4rem;
   }
   .sobremi__img-container {
     display: none;
   }
   .sobremi__title {
     font-size: 2rem;
+  }
+  .sobremi__info {
+    padding: 0;
+    height: fit-content;
+  }
+  .sobremi__card {
+    width: 100%;
   }
   .sobremi__item {
     font-size: 1rem;
@@ -932,22 +954,26 @@ progress {
 @media screen and (max-width: 425px) {
   #proyectos {
     flex-wrap: wrap;
-    height: 100vh;
+    height: fit-content;
     justify-content: space-evenly;
     padding: 1.4rem;
   }
   .proyectos__sub-subtitle {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
   .proyectos__container {
     width: 100%;
+    height: fit-content;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    overflow: hidden;
   }
   .proyectos__card {
     width: 100%;
-    height: 70%;
+    margin: 8px 0;
+  }
+  .proyectos__img {
+    height: 120px;
   }
   .proyectos__card-info {
     display: flex;
@@ -957,68 +983,94 @@ progress {
   .proyectos__text {
     display: none;
   }
+  .proyectos__button {
+    display: none;
+  }
 }
 /*_habilidades.scss*/
 #habilidades {
   background-color: #323946;
 }
-#habilidades .habilidades__title {
+
+.habilidades__title {
   text-align: center;
   font-size: 3rem;
 }
-#habilidades .habilidades__container {
+.habilidades__container {
   width: 100vw;
 }
-#habilidades .habilidades__principal {
+
+.habilidades__principal {
   width: 40%;
   height: 100%;
   padding: 0.7rem;
   background-color: #1f242d;
 }
-#habilidades .habilidades__carddescription {
+
+.habilidades__carddescription {
   width: 100%;
   padding: 10px;
 }
-#habilidades .habilidades__cardtext {
+
+.habilidades__cardtext {
   font-size: 1.2rem;
 }
-#habilidades .habilidades__progress {
+
+.habilidades__progress {
   width: 100%;
   margin-top: 5px;
 }
-#habilidades .habilidades__code {
+
+.habilidades__code {
   width: 40%;
   height: 100%;
 }
-#habilidades .habilidades__img {
+
+.habilidades__img {
   opacity: 0;
   position: absolute;
   filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.7));
   -webkit-filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.7));
 }
-#habilidades .habilidades__img:nth-child(1) {
+.habilidades__img:nth-child(1) {
   width: 390px;
 }
-#habilidades .habilidades__img:nth-child(2) {
+.habilidades__img:nth-child(2) {
   width: 290px;
 }
-#habilidades .habilidades__img:nth-child(3) {
+.habilidades__img:nth-child(3) {
   width: 450px;
 }
-#habilidades .habilidades__img:nth-child(4) {
+.habilidades__img:nth-child(4) {
   width: 380px;
 }
-#habilidades .habilidades__img:nth-child(5) {
+.habilidades__img:nth-child(5) {
   width: 220px;
 }
-#habilidades .habilidades__img:nth-child(6) {
+.habilidades__img:nth-child(6) {
   width: 450px;
 }
-#habilidades .habilidades__img:nth-child(7) {
+.habilidades__img:nth-child(7) {
   width: 500px;
 }
 
 @media screen and (max-width: 425px) {
+  #habilidades {
+    height: fit-content;
+    padding: 1.4rem;
+  }
+  .habilidades__title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .habilidades__container {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .habilidades__principal {
+    width: 100%;
+  }
   .habilidades__img {
     display: none;
   }
@@ -1118,7 +1170,7 @@ progress {
 }
 @media screen and (max-width: 425px) {
   #contacto {
-    height: 100vh;
+    height: fit-content;
     padding: 0 1.4rem 1.4rem 1.4rem;
   }
   .contacto__title {
@@ -1127,7 +1179,7 @@ progress {
   }
   .contacto__container {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
@@ -1152,6 +1204,7 @@ progress {
     display: none;
   }
   .contacto__form {
+    margin-top: 15px;
     width: 100%;
     height: auto;
     padding: 10px;

@@ -124,25 +124,30 @@
 
     #proyectos{
         flex-wrap: wrap;
-        height: 100vh;
+        height: fit-content;
         justify-content: space-evenly;
         padding: 1.4rem;
     }
 
     .proyectos__sub-subtitle{
         font-size: 2rem;
+        margin-bottom: 10px;
     }
 
     .proyectos__container{
         width: 100%;
+        height: fit-content;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        overflow: hidden;
     }
 
     .proyectos__card{
         width: 100%;
-        height: 70%;
+        margin: 8px 0;
+    }
+
+    .proyectos__img{
+        height: 120px;
     }
 
     .proyectos__card-info{
@@ -152,6 +157,10 @@
     }
 
     .proyectos__text{
+        display: none;
+    }
+
+    .proyectos__button{
         display: none;
     }
 

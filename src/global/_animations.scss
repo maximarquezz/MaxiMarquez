@@ -65,6 +65,21 @@
     }
 }
 
+@keyframes colorText_two{
+    0%{
+        color: variables.$main-color;
+    }
+    
+    50%{
+        color: variables.$main-color;
+        text-shadow: 0 0 20px variables.$main-color;
+    }
+
+    100%{
+        color: variables.$main-color;
+    }
+}
+
 @-webkit-keyframes imageGlow{
     0%{
         filter: drop-shadow(0 0 30px variables.$main-color);
@@ -107,6 +122,11 @@
 .animation_color-text_6s{
     animation: colorText 6s infinite ease-in-out;
     -webkit-animation: colorText 6s infinite ease-in-out;
+}
+
+.animation_color-text_two_6s{
+    animation: colorText_two 6s infinite ease-in-out;
+    -webkit-animation: colorText_two 6s infinite ease-in-out;
 }
 
 .animation_profile-movement_4s{

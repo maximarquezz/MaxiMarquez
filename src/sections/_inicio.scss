@@ -76,15 +76,12 @@
 
     #inicio{
         flex-wrap: wrap;
-        height: 100vh;
+        height: fit-content;
+        padding: 1.4rem;
     }
 
     .inicio__perfilimg{
         display: none;
-    }
-
-    .inicio__presentation{
-        padding: 1.5rem;
     }
 
     .inicio__sub-subtitle{
@@ -102,7 +99,7 @@
     }
 
     .inicio__red-link{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .inicio__downloadCVbutton{

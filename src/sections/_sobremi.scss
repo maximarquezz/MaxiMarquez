@@ -46,7 +46,7 @@
         font-size: 1.1rem;
 
         &--strong{
-            @extend .animation_color-text_6s;
+            @extend .animation_color-text_two_6s;
         }
     }
 
@@ -59,6 +59,7 @@
     #sobremi{
         flex-wrap: wrap;
         height: fit-content;
+        padding: 1.4rem;
     }
 
     .sobremi__img-container{
@@ -67,6 +68,15 @@
 
     .sobremi__title{
         font-size: 2rem;
+    }
+
+    .sobremi__info{
+        padding: 0;
+        height: fit-content;
+    }
+
+    .sobremi__card{
+        width: 100%;
     }
 
     .sobremi__item{
