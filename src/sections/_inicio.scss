@@ -81,7 +81,18 @@
     }
 
     .inicio__perfilimg{
-        display: none;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inicio__perfilimg img{
+        position: absolute;
+        margin-top: 40px;
+        width: 80%;
+        height: 80%;
     }
 
     .inicio__sub-subtitle{

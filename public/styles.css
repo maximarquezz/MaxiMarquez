@@ -831,7 +831,17 @@ progress {
     padding: 1.7rem;
   }
   .inicio__perfilimg {
-    display: none;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio__perfilimg img {
+    position: absolute;
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
   }
   .inicio__sub-subtitle {
     font-size: 1.2rem;
@@ -1278,7 +1288,7 @@ progress {
     width: 100%;
   }
   .contacto__form label {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 100%;
   }
   .contacto__form input,
