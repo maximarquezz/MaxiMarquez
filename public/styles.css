@@ -1536,7 +1536,7 @@ progress {
     padding: 1.5rem;
   }
   .footer__curriculumtext {
-    line-height: 0.7rem;
+    line-height: 1rem;
     font-size: 0.7rem;
   }
   .footer__help {
@@ -1545,6 +1545,21 @@ progress {
   .footer__help i {
     display: none;
     margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1170px) {
+  .footer__help i {
+    display: none;
+  }
+  .footer__curriculumtext {
+    line-height: 1rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1223px) {
+  .footer__curriculumtext {
+    line-height: 1rem;
+    font-size: 0.7rem;
   }
 }
 
