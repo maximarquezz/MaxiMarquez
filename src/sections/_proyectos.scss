@@ -120,7 +120,7 @@
         @extend .btn-secondary;
     }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
     #proyectos{
         flex-wrap: wrap;
@@ -159,4 +159,30 @@
     .proyectos__text{
         line-height: 1.3rem;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #proyectos{
+        padding: 1.7rem;
+    }
+
+    .proyectos__sub-subtitle{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .proyectos__card{
+        padding: 10px;
+    }
+
+    .proyectos__title{
+        font-size: 1.3rem;
+    }
+
+    .proyectos__text{
+        line-height: 1.3rem;
+        font-size: .8rem;
+    }
+
 }

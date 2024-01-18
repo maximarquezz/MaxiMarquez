@@ -72,7 +72,7 @@
     }
 
 // Media query para 320x535
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
     #inicio{
         flex-wrap: wrap;
@@ -125,6 +125,35 @@
     
     .inicio__parrafo{
         margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #inicio{
+        padding: 1.7rem;
+    }
+
+    .inicio__sub-subtitle{
+        font-size: 1rem;
+    }
+
+    .inicio__title{
+        font-size: 2rem;
+    }
+
+    .inicio__subtitle{
+        font-size: 1.4rem;
+    }
+
+    .inicio__parrafo{
+        font-size: .8rem;
+    }
+
+    .inicio__perfilimg{
+        width: 22rem;
+        height: 22rem;
     }
 
 }

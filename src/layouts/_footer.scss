@@ -81,7 +81,7 @@
   color: variables.$smalltext-color;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
   .footer{
     height: fit-content;
@@ -115,6 +115,28 @@
 
   .footer__copytext{
     font-size: 0.7rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .footer__allcontainer{
+    padding: 1.5rem;
+  }
+
+  .footer__curriculumtext{
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .footer__help{
+    font-size: 0.6rem;
+  }
+
+  .footer__help i{
+    display: none;
+    margin: 0;
   }
 
 }

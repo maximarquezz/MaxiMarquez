@@ -106,7 +106,7 @@
   }
 
 // Media query para 320x535
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
   .nav,
   .nav__ul{
@@ -158,6 +158,22 @@
     position: fixed;
     right: 10px;
     top: 10px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  .nav{
+    padding: 10px;
+  }
+
+  .nav__subtitle{
+    font-size: 1.5rem;
+  }
+
+  .nav__a{
+    font-size: .8rem;
   }
 
 }

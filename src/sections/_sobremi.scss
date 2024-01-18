@@ -54,7 +54,7 @@
         @extend .btn-secondary;
     }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
     #sobremi{
         flex-wrap: wrap;
@@ -83,6 +83,27 @@
         font-size: 1rem;
         line-height: 2rem;
         padding: 2px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #sobremi{
+        padding: 1.7rem;
+    }
+
+    .sobremi__title{
+        font-size: 2rem;
+    }
+
+    .sobremi__item{
+        font-size: 1rem;
+    }
+
+    .sobremi__img-container{
+        width: 22rem;
+        height: 22rem                  ;
     }
 
 }

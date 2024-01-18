@@ -562,7 +562,7 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .nav,
   .nav__ul {
     flex-wrap: wrap;
@@ -606,6 +606,17 @@ input {
     position: fixed;
     right: 10px;
     top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    padding: 10px;
+  }
+  .nav__subtitle {
+    font-size: 1.5rem;
+  }
+  .nav__a {
+    font-size: 0.8rem;
   }
 }
 /*_global.scss*/
@@ -824,7 +835,7 @@ progress {
   padding: 15px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   #inicio {
     flex-wrap: wrap;
     height: fit-content;
@@ -869,6 +880,27 @@ progress {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #inicio {
+    padding: 1.7rem;
+  }
+  .inicio__sub-subtitle {
+    font-size: 1rem;
+  }
+  .inicio__title {
+    font-size: 2rem;
+  }
+  .inicio__subtitle {
+    font-size: 1.4rem;
+  }
+  .inicio__parrafo {
+    font-size: 0.8rem;
+  }
+  .inicio__perfilimg {
+    width: 22rem;
+    height: 22rem;
+  }
+}
 /*_sobremi.scss*/
 #sobremi {
   background-color: #323946;
@@ -889,7 +921,7 @@ progress {
   list-style: none;
   font-size: 1.1rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   #sobremi {
     flex-wrap: wrap;
     height: fit-content;
@@ -912,6 +944,21 @@ progress {
     font-size: 1rem;
     line-height: 2rem;
     padding: 2px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #sobremi {
+    padding: 1.7rem;
+  }
+  .sobremi__title {
+    font-size: 2rem;
+  }
+  .sobremi__item {
+    font-size: 1rem;
+  }
+  .sobremi__img-container {
+    width: 22rem;
+    height: 22rem;
   }
 }
 /*_proyectos.scss*/
@@ -990,7 +1037,7 @@ progress {
   text-align: center;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   #proyectos {
     flex-wrap: wrap;
     height: fit-content;
@@ -1021,6 +1068,25 @@ progress {
   }
   .proyectos__text {
     line-height: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #proyectos {
+    padding: 1.7rem;
+  }
+  .proyectos__sub-subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .proyectos__card {
+    padding: 10px;
+  }
+  .proyectos__title {
+    font-size: 1.3rem;
+  }
+  .proyectos__text {
+    line-height: 1.3rem;
+    font-size: 0.8rem;
   }
 }
 /*_habilidades.scss*/
@@ -1090,7 +1156,7 @@ progress {
   width: 500px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   #habilidades {
     height: fit-content;
     padding: 1.7rem 1.7rem 0 1.7rem;
@@ -1142,6 +1208,51 @@ progress {
   }
   .habilidades__carddescription {
     margin: 4px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #habilidades {
+    padding: 1.7rem;
+  }
+  .habilidades__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .habilidades__textcontainer,
+  .habilidades__cardtext {
+    font-size: 1rem;
+  }
+  .habilidades__code {
+    height: 300px;
+  }
+  .habilidades__img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+  }
+  .habilidades__img:nth-child(1) {
+    width: 270px;
+  }
+  .habilidades__img:nth-child(2) {
+    width: 210px;
+  }
+  .habilidades__img:nth-child(3) {
+    width: 290px;
+  }
+  .habilidades__img:nth-child(4) {
+    width: 250px;
+  }
+  .habilidades__img:nth-child(5) {
+    width: 180px;
+  }
+  .habilidades__img:nth-child(6) {
+    width: 280px;
+  }
+  .habilidades__img:nth-child(7) {
+    width: 350px;
   }
 }
 /*_contacto.scss*/
@@ -1237,7 +1348,7 @@ progress {
 .contacto__title {
   font-size: 3rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   #contacto {
     height: fit-content;
     padding: 0 1.7rem 1.7rem 1.7rem;
@@ -1303,7 +1414,23 @@ progress {
   }
   .contacto__form button {
     padding: 10px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #contacto {
+    padding: 1.7rem;
+  }
+  .contacto__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .contacto__socialcard {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .contacto__form textarea {
+    height: 100px;
   }
 }
 /*_footer.scss*/
@@ -1375,7 +1502,7 @@ progress {
   color: #8a9094;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .footer {
     height: fit-content;
   }
@@ -1402,6 +1529,22 @@ progress {
   }
   .footer__copytext {
     font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer__allcontainer {
+    padding: 1.5rem;
+  }
+  .footer__curriculumtext {
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+  }
+  .footer__help {
+    font-size: 0.6rem;
+  }
+  .footer__help i {
+    display: none;
+    margin: 0;
   }
 }
 

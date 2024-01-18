@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 767px){
 
     #habilidades{
         height: fit-content;
@@ -153,6 +153,59 @@
 
     .habilidades__carddescription{
         margin: 4px 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #habilidades{
+        padding: 1.7rem;
+    }
+
+    .habilidades__title{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .habilidades__textcontainer,
+    .habilidades__cardtext{
+        font-size: 1rem;
+    }
+
+    .habilidades__code{
+        height: 300px;
+    }
+
+    .habilidades__img{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+
+        &:nth-child(1){
+            width: 270px;
+        }
+        &:nth-child(2){
+            width: 210px;
+        }
+        &:nth-child(3){
+            width: 290px;
+        }
+        &:nth-child(4){
+            width: 250px;
+        }
+        &:nth-child(5){
+            width: 180px;
+        }
+        &:nth-child(6){
+            width: 280px;
+        }
+        &:nth-child(7){
+            width: 350px;
+        }
     }
 
 }
