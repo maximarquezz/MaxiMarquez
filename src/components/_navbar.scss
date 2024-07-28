@@ -108,6 +108,12 @@
 // Media query para 320x535
 @media screen and (max-width: 767px){
 
+
+  .nav{
+    position: fixed;
+    background-color: transparent;
+  }
+
   .nav,
   .nav__ul{
       flex-wrap: wrap;

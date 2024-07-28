@@ -81,37 +81,41 @@
         padding: 1.7rem;
     }
 
+    .inicio__presentation{
+        background-color: variables.$second-bg-color;
+        padding: 30px;
+        width: 100%;
+        height: fit-content;
+        border-radius: 20px;
+    }
+
     .inicio__perfilimg{
-        width: 400px;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
 
     .inicio__perfilimg img{
-        position: absolute;
-        margin-top: 40px;
-        width: 80%;
-        height: 80%;
+        display: none;
     }
 
     .inicio__sub-subtitle{
-        font-size: 1.2rem;
+        display: none;
+        text-align: center;
     }
 
     .inicio__subtitle{
         font-size: 1.3rem;
         margin-top: 5px;
+        text-align: center;
     }
 
     .inicio__title{
         margin-top: 5px;
+        text-align: center;
     }
 
     .inicio__social{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 15px;
     }
 

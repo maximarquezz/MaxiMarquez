@@ -35,7 +35,7 @@
         font-weight: bold;
         background-color: variables.$main-color;
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 20px;
     }
@@ -62,23 +62,23 @@
     
     .proyectos__img--second_photo{
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.6))),
-        url(../../public/assets/images/mmarquez.PNG);
+        url(../../public/assets/images/springapi.png);
         background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(../../public/assets/images/mmarquez.PNG);
+        url(../../public/assets/images/springapi.png);
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(../../public/assets/images/mmarquez.PNG);
-        background-position: center;
+        url(../../public/assets/images/springapi.png);
+        background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
     }
     
     .proyectos__img--third_photo{
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0.6))),
-        url(../../public/assets/images/darkmode.PNG);
+        url(../../public/assets/images/clubsoftcuentacorriente.png);
         background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(../../public/assets/images/darkmode.PNG);
+        url(../../public/assets/images/clubsoftcuentacorriente.png);
         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(../../public/assets/images/darkmode.PNG);
+        url(../../public/assets/images/clubsoftcuentacorriente.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
