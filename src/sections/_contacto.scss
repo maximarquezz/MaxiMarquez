@@ -60,7 +60,7 @@
 .contacto__form{
     width: 40vw;
     @extend .flex-col_spc-evly;
-    height: 100%;
+    height: full;
     padding: 1.5rem;
     @extend .border-rad_20px;
     background-color: variables.$second-bg-color;

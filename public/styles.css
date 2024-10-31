@@ -98,16 +98,13 @@ input {
 @keyframes colorText {
   0% {
     color: #fff;
-    filter: hue-rotate(0deg);
   }
   50% {
     color: #0ef;
     text-shadow: 0 0 20px #0ef;
-    filter: hue-rotate(180deg);
   }
   100% {
     color: #fff;
-    filter: hue-rotate(0deg);
   }
 }
 @keyframes colorText_two {
@@ -1003,9 +1000,9 @@ progress {
 }
 
 .proyectos__img--first_photo {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../public/assets/images/interior.webp);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/interior.webp);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/interior.webp);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../public/assets/images/swapi.png);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/swapi.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/assets/images/swapi.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1311,7 +1308,7 @@ progress {
 
 .contacto__form {
   width: 40vw;
-  height: 100%;
+  height: full;
   padding: 1.5rem;
   background-color: #323946;
 }
