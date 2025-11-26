@@ -1,211 +1,175 @@
 /*_habilidades.scss*/
-@use '../global/animations' as animations;
-@use '../global/variables' as variables;
-@use '../global/utils' as utils;
-@use '../components/card' as card;
+@use "../global/animations" as animations;
+@use "../global/variables" as variables;
+@use "../global/utils" as utils;
 
-#habilidades{
-    @extend .sections_w-and-h;
-    @extend .flex-col_spc-evly;
-    background-color: variables.$second-bg-color;
+#habilidades {
+  @extend .flex-col_center;
+  background-color: variables.$second-bg-color;
+  padding: 2rem 0;
 }
 
-.habilidades__title{
-    text-align: center;
-    font-size: 3rem;
+.habilidades__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 
-    &--span{
-        @extend .animation_color-text_6s;
-    }
+  &--span {
+    @extend .animation_color-text_6s;
+  }
 }
 
-.habilidades__container{  
-    width: 100vw;
-    @extend .flex-row_spc-evly;
-}
+.habilidades__carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 
-.habilidades__principal{
-    @extend .flex-col_spc-btw;
-    @extend .border-rad_20px;
-    @extend .card;
-    width: 40%;
-    height: 100%;
-    padding: 0.7rem;
-    background-color: variables.$bg-color;
-}
-
-.habilidades__carddescription{
-    width: 100%;
-    @extend .border-rad_20px;
-    padding: 10px;
-}
-
-.habilidades__textcontainer{
-    @extend .flex-row_spc-btw;
-}
-
-.habilidades__cardtext{
-    font-size: 1.2rem;
-}
-
-.habilidades__progress{
-    width: 100%;
-    margin-top: 5px;
-}
-
-.habilidades__code{
-    @extend.flex-col_spc-evly;
-    width: 40%;
-    height: 100%;
-}
-
-.habilidades__img{
-    opacity: 0;
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    @extend .animation_profile-movement_4s;
-    filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.7));
-    -webkit-filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.7));
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
 
-    &:nth-child(1){
-        width: 390px;
-    }
-    &:nth-child(2){
-        width: 290px;
-    }
-    &:nth-child(3){
-        width: 450px;
-    }
-    &:nth-child(4){
-        width: 380px;
-    }
-    &:nth-child(5){
-        width: 220px;
-    }
-    &:nth-child(6){
-        width: 450px;
-    }
-    &:nth-child(7){
-        width: 500px;
-    }
+  &::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      variables.$second-bg-color,
+      transparent
+    );
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      variables.$second-bg-color,
+      transparent
+    );
+  }
 }
 
-@media screen and (max-width: 767px){
+.habilidades__carousel-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+  padding: 1rem;
 
-    #habilidades{
-        height: fit-content;
-        padding: 1.7rem 1.7rem 0 1.7rem;
-    }
-
-    .habilidades__title{
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-    }
-
-    .habilidades__container{
-        width: 100%;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .habilidades__principal{
-        width: 100%;
-    }
-
-    .habilidades__code{
-        height: 300px;
-        width: 100%;
-    }
-
-    .habilidades__img{
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: fit-content;
-
-        &:nth-child(1){
-            width: 220px;
-        }
-        &:nth-child(2){
-            width: 160px;
-        }
-        &:nth-child(3){
-            width: 240px;
-        }
-        &:nth-child(4){
-            width: 200px;
-        }
-        &:nth-child(5){
-            width: 130px;
-        }
-        &:nth-child(6){
-            width: 230px;
-        }
-        &:nth-child(7){
-            width: 300px;
-        }
-    }
-
-    // .habilidades__img{
-    //     display: none;
-    // }
-
-    .habilidades__carddescription{
-        margin: 4px 0;
-    }
-
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+.habilidades__logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 150px;
+  padding: 2rem;
+  background-color: variables.$bg-color;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    #habilidades{
-        padding: 1.7rem;
+  &:hover {
+    box-shadow: 0 0 10px variables.$main-color;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 7 - 4rem * 7));
+  }
+}
+
+// Segundo track para el efecto infinito sin gaps
+.habilidades__carousel-track--duplicate {
+  animation: scroll 30s linear infinite;
+}
+
+@media screen and (max-width: 767px) {
+  #habilidades {
+    height: fit-content;
+    padding: 2rem 0;
+  }
+
+  .habilidades__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1.7rem;
+  }
+
+  .habilidades__carousel-container {
+    &::before,
+    &::after {
+      width: 50px;
     }
+  }
 
-    .habilidades__title{
-        font-size: 2rem;
-        margin-bottom: 20px;
+  .habilidades__carousel-track {
+    gap: 2rem;
+  }
+
+  .habilidades__logo-item {
+    min-width: 150px;
+    height: 120px;
+    padding: 1.5rem;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-
-    .habilidades__textcontainer,
-    .habilidades__cardtext{
-        font-size: 1rem;
+    100% {
+      transform: translateX(calc(-150px * 7 - 2rem * 7));
     }
+  }
+}
 
-    .habilidades__code{
-        height: 300px;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #habilidades {
+    padding: 2rem 1.7rem;
+  }
+
+  .habilidades__title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .habilidades__carousel-container {
+    &::before,
+    &::after {
+      width: 100px;
     }
+  }
 
-    .habilidades__img{
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: fit-content;
+  .habilidades__logo-item {
+    min-width: 180px;
+    height: 140px;
+  }
 
-        &:nth-child(1){
-            width: 270px;
-        }
-        &:nth-child(2){
-            width: 210px;
-        }
-        &:nth-child(3){
-            width: 290px;
-        }
-        &:nth-child(4){
-            width: 250px;
-        }
-        &:nth-child(5){
-            width: 180px;
-        }
-        &:nth-child(6){
-            width: 280px;
-        }
-        &:nth-child(7){
-            width: 350px;
-        }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-
+    100% {
+      transform: translateX(calc(-180px * 7 - 4rem * 7));
+    }
+  }
 }

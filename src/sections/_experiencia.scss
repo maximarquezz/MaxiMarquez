@@ -1,0 +1,224 @@
+/*_experiencia.scss*/
+@use "../global/animations" as animations;
+@use "../global/variables" as variables;
+@use "../global/utils" as utils;
+
+#experiencia {
+  width: 100%;
+  min-height: 100vh;
+  @extend .flex-col_center;
+  background-color: variables.$bg-color;
+  padding: 3rem 2rem;
+}
+
+.experiencia__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+
+  &--span {
+    @extend .animation_color-text_6s;
+  }
+}
+
+.experiencia__timeline {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: variables.$main-color;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+.experiencia__item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: variables.$main-color;
+    border: 4px solid variables.$bg-color;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 20px variables.$main-color;
+  }
+}
+
+.experiencia__item--left {
+  left: 0;
+
+  &::after {
+    right: -12px;
+  }
+
+  .experiencia__content {
+    text-align: right;
+  }
+}
+
+.experiencia__item--right {
+  left: 50%;
+
+  &::after {
+    left: -12px;
+  }
+
+  .experiencia__content {
+    text-align: left;
+  }
+}
+
+.experiencia__content {
+  padding: 20px 30px;
+  background-color: variables.$second-bg-color;
+  position: relative;
+  @extend .border-rad_20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 2px solid variables.$main-color;
+
+  &:hover {
+    box-shadow: 0 0 30px variables.$main-color;
+  }
+}
+
+.experiencia__fecha {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: variables.$main-color;
+  color: variables.$bg-color;
+  @extend .border-rad_20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.experiencia__cargo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  @extend .animation_color-text_two_6s;
+}
+
+.experiencia__empresa {
+  font-size: 1.1rem;
+  color: variables.$smalltext-color;
+  margin-bottom: 15px;
+}
+
+.experiencia__descripcion {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.experiencia__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.experiencia__tech {
+  padding: 5px 15px;
+  background-color: variables.$bg-color;
+  @extend .border-rad_10px;
+  font-size: 0.85rem;
+  color: variables.$main-color;
+  border: 1px solid variables.$main-color;
+}
+
+@media screen and (max-width: 767px) {
+  #experiencia {
+    height: fit-content;
+    padding: 2rem 1.7rem;
+  }
+
+  .experiencia__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .experiencia__timeline::after {
+    left: 20px;
+  }
+
+  .experiencia__item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 0;
+
+    &::after {
+      left: 12px !important;
+      right: auto !important;
+    }
+  }
+
+  .experiencia__item--left,
+  .experiencia__item--right {
+    left: 0;
+
+    .experiencia__content {
+      text-align: left;
+    }
+  }
+
+  .experiencia__cargo {
+    font-size: 1.2rem;
+  }
+
+  .experiencia__empresa {
+    font-size: 1rem;
+  }
+
+  .experiencia__descripcion {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .experiencia__fecha {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .experiencia__tech {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #experiencia {
+    padding: 2rem 1.7rem;
+  }
+
+  .experiencia__title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .experiencia__cargo {
+    font-size: 1.3rem;
+  }
+
+  .experiencia__empresa {
+    font-size: 1rem;
+  }
+
+  .experiencia__descripcion {
+    font-size: 0.95rem;
+  }
+}

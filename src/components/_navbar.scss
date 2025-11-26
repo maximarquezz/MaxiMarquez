@@ -1,163 +1,165 @@
 /*_navbar.scss*/
-@use '../global/_variables.scss' as variables;
-@use '../global/utils' as utils;
+@use "../global/_variables.scss" as variables;
+@use "../global/utils" as utils;
 
-.nav{
+.nav {
   width: 80vw;
   height: 14vh;
   margin: auto;
   padding: 1.4rem;
-  background-color: variables.$bg-color;
   @extend .flex-row_spc-btw;
+  background-color: transparent;
 }
 
-  .nav__subtitle{
-    font-size: 1.8rem;
-    @extend .cursor-def_userslct-none;
-  }
+.nav__subtitle {
+  font-size: 1.8rem;
+  @extend .cursor-def_userslct-none;
+}
 
-  .nav__ul{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-  .nav__a{
-    text-decoration: none;
-    color: variables.$text-color;
-    @extend .transition_color-textshadow;
-    margin-left: 2rem;
-    font-size: 1.1rem;
+.nav__a {
+  text-decoration: none;
+  color: variables.$text-color;
+  @extend .transition_color-textshadow;
+  margin-left: 2rem;
+  font-size: 1.1rem;
 
-    &:hover{
-      color: variables.$main-color;
-      text-shadow: 0px 0px 30px variables.$text-color;
-    }
-  }
-
-  .active{ 
+  &:hover {
     color: variables.$main-color;
     text-shadow: 0px 0px 30px variables.$text-color;
   }
+}
 
-  .burger {
-    filter: invert(1);
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: black;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
+.active {
+  color: variables.$main-color;
+  text-shadow: 0px 0px 30px variables.$text-color;
+}
 
-  .invisible{
-    display: none;
-  }
+.burger {
+  filter: invert(1);
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+.invisible {
+  display: none;
+}
 
 // Media query para 320x535
-@media screen and (max-width: 767px){
-
-
-  .nav{
+@media screen and (max-width: 767px) {
+  .nav {
     position: fixed;
     background-color: transparent;
   }
 
   .nav,
-  .nav__ul{
-      flex-wrap: wrap;
-      padding: 1rem;
-      height: fit-content;
+  .nav__ul {
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: fit-content;
   }
 
-  .nav__ul{
+  .nav__ul {
     display: none;
 
-    &.visible{
+    &.visible {
       position: fixed;
       right: 0;
       top: 0;
       display: block;
       width: 50vw;
       height: 100vh;
-      background: linear-gradient(to right, variables.$bg-color, variables.$second-bg-color);
+      background: linear-gradient(
+        to right,
+        variables.$bg-color,
+        variables.$second-bg-color
+      );
       z-index: 200;
-      outline: 500px solid rgba(0,0,0,0.7);
+      outline: 500px solid rgba(0, 0, 0, 0.7);
     }
   }
 
-  .nav__li{
+  .nav__li {
     border-bottom: 1px solid white;
   }
 
-  .invisible{
+  .invisible {
     display: inline;
     margin-right: 8px;
     font-size: 1rem;
   }
 
-  .nav__a{
+  .nav__a {
     margin: 0;
     font-size: 1rem;
     line-height: 3rem;
   }
 
-  .nav__subtitle{
+  .nav__subtitle {
     display: none;
   }
 
-  .burger{
+  .burger {
     color: variables.$text-color;
     z-index: 300;
     display: block;
@@ -165,21 +167,18 @@
     right: 10px;
     top: 10px;
   }
-
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-  .nav{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
     padding: 10px;
   }
 
-  .nav__subtitle{
+  .nav__subtitle {
     font-size: 1.5rem;
   }
 
-  .nav__a{
-    font-size: .8rem;
+  .nav__a {
+    font-size: 0.8rem;
   }
-
 }

@@ -1,420 +1,1134 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>Maximiliano Marquez | Software Developer</title>
 
-<head>
-	<title>Maximiliano Marquez | Software Developer</title>
+    <!--Metadatos-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1f242d" />
+    <meta name="author" content="Maximiliano Marquez" />
+    <meta
+      name="description"
+      content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web."
+    />
+    <meta
+      name="keywords"
+      content="estética, digital, arte, tecnología, experiencias, visuales, diseño, creativo, decoración, innovadora, diseño, contemporáneo, diseño, clásico, armonía, innovación, portfolio, visual, tonos, azules, s, interfaz, dinámica, modos, luz/oscuridad, versatilidad, experiencia, única, Maximiliano, Márquez, freelance, trainee, Argentina, nivel, superior, TS, Análisis, Desarrollo, Software, nacimiento, 15/10/03, desarrollo, software, análisis, software, modos, luz/oscuridad, diseño, web, interfaz, dinámica, web"
+    />
+    <meta name="generator" content="VSCode" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-	<!--Metadatos-->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="index, follow">
-	<meta name="theme-color" content="#1f242d">
-	<meta name="author" content="Maximiliano Marquez">
-	<meta name="description"
-		content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web.">
-	<meta name="keywords"
-		content="estética, digital, arte, tecnología, experiencias, visuales, diseño, creativo, decoración, innovadora, diseño, contemporáneo, diseño, clásico, armonía, innovación, portfolio, visual, tonos, azules, box-shadows, interfaz, dinámica, modos, luz/oscuridad, versatilidad, experiencia, única, Maximiliano, Márquez, freelance, trainee, Argentina, nivel, superior, TS, Análisis, Desarrollo, Software, nacimiento, 15/10/03, desarrollo, software, análisis, software, modos, luz/oscuridad, diseño, web, interfaz, dinámica, web">
-	<meta name="generator" content="VSCode">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--OpenGraph Protocol-->
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://maximarquez.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Maximiliano Marquez | Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web."
+    />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/images/15b27d33-1069-4459-8bb2-7d6942405b02.png?token=uBE5qvB4zI5I-G0e74dV84Ynq2JMrUwe_eO9uoAci94&height=563&width=1200&expires=33265383787"
+    />
 
-	<!--OpenGraph Protocol-->
-	<!-- Facebook Meta Tags -->
-	<meta property="og:url" content="https://maximarquez.netlify.app/">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Maximiliano Marquez | Software Developer">
-	<meta property="og:description"
-		content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web.">
-	<meta property="og:image"
-		content="https://opengraph.b-cdn.net/production/images/15b27d33-1069-4459-8bb2-7d6942405b02.png?token=uBE5qvB4zI5I-G0e74dV84Ynq2JMrUwe_eO9uoAci94&height=563&width=1200&expires=33265383787">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="maximarquez.netlify.app" />
+    <meta property="twitter:url" content="https://maximarquez.netlify.app/" />
+    <meta
+      name="twitter:title"
+      content="Maximiliano Marquez | Software Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/images/15b27d33-1069-4459-8bb2-7d6942405b02.png?token=uBE5qvB4zI5I-G0e74dV84Ynq2JMrUwe_eO9uoAci94&height=563&width=1200&expires=33265383787"
+    />
 
-	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="twitter:domain" content="maximarquez.netlify.app">
-	<meta property="twitter:url" content="https://maximarquez.netlify.app/">
-	<meta name="twitter:title" content="Maximiliano Marquez | Software Developer">
-	<meta name="twitter:description"
-		content="Desarrollador especializado en APIs, MVC, y tecnologías como Java, PHP y Tailwind CSS, con experiencia en integración de sistemas y consumo de servicios web.">
-	<meta name="twitter:image"
-		content="https://opengraph.b-cdn.net/production/images/15b27d33-1069-4459-8bb2-7d6942405b02.png?token=uBE5qvB4zI5I-G0e74dV84Ynq2JMrUwe_eO9uoAci94&height=563&width=1200&expires=33265383787">
+    <!--Canonical (original) & Alternate (alternativa)-->
+    <link rel="canonical" href="https://maximarquez.netlify.app/" />
+    <!-- <link rel="alternate" href="" hreflang=""> -->
 
-	<!--Canonical (original) & Alternate (alternativa)-->
-	<link rel="canonical" href="https://maximarquez.netlify.app/">
-	<!-- <link rel="alternate" href="" hreflang=""> -->
-
-	<!--Info adicional o datos, se linkean a páginas (internas o externas)-->
-	<!-- <link rel="author" href="">
+    <!--Info adicional o datos, se linkean a páginas (internas o externas)-->
+    <!-- <link rel="author" href="">
 	<link rel="help" href="">
 	<link rel="search" href="">
 	<link rel="license" href=""> -->
 
-	<!--Favicon (sizes)-->
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/favicon.ico" sizes="48x48">
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/apple-touch-icon.png" sizes="180x180">
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/jpg" href="public/assets/favicons/android-chrome-512x512.png" sizes="512x512">
+    <!--Favicon (sizes)-->
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/favicon.ico"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="public/assets/favicons/android-chrome-512x512.png"
+      sizes="512x512"
+    />
 
-	<!--Font Awesome (iconos)-->
-	<script src="https://kit.fontawesome.com/340d67c615.js" crossorigin="anonymous"></script>
+    <!--Font Awesome (iconos)-->
+    <script
+      src="https://kit.fontawesome.com/340d67c615.js"
+      crossorigin="anonymous"
+    ></script>
 
-	<!--Fuentes (Google Fonts)-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!--Fuentes (Google Fonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
 
-	<!--Linkeos generales-->
-	<link rel="stylesheet" href="public/styles.min.css">
-	<script src="public/main.js"></script>
-</head>
+    <!--Linkeos generales-->
+    <link rel="stylesheet" href="public/styles.css" />
+    <script src="public/main.js"></script>
+  </head>
 
-<body>
-	<header id="init">
-		<nav class="nav">
-			<h2 class="nav__subtitle">Portfolio.</h2>
+  <body>
+    <header id="init">
+      <nav class="nav">
+        <h2 class="nav__subtitle">Portfolio.</h2>
 
-			<label class="burger" for="burger">
-				<input type="checkbox" id="burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
+        <label class="burger" for="burger">
+          <input type="checkbox" id="burger" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-			<ul class="nav__ul">
-				<li class="nav__li"><i class="fa-solid fa-house invisible active"></i><a href="#init"
-						class="nav__a active">Inicio</a></li>
-				<li class="nav__li"><i class="fa-solid fa-user invisible"></i><a href="#sobremi" class="nav__a">Sobre
-						mí</a></li>
-				<li class="nav__li"><i class="fa-solid fa-list-check invisible"></i><a href="#proyectos"
-						class="nav__a">Proyectos</a></li>
-				<li class="nav__li"><i class="fa-solid fa-bars-progress invisible"></i><a href="#habilidades"
-						class="nav__a">Habilidades</a></li>
-				<li class="nav__li"><i class="fa-solid fa-envelope invisible"></i><a href="#contacto"
-						class="nav__a">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+        <ul class="nav__ul">
+          <li class="nav__li">
+            <i class="fa-solid fa-house invisible active"></i
+            ><a href="#init" class="nav__a active">Inicio</a>
+          </li>
+          <li class="nav__li">
+            <i class="fa-solid fa-user invisible"></i
+            ><a href="#experiencia" class="nav__a">Experiencia</a>
+          </li>
+          <li class="nav__li">
+            <i class="fa-solid fa-user invisible"></i
+            ><a href="#sobremi" class="nav__a">Sobre mí</a>
+          </li>
+          <li class="nav__li">
+            <i class="fa-solid fa-list-check invisible"></i
+            ><a href="#proyectos" class="nav__a">Proyectos</a>
+          </li>
+          <li class="nav__li">
+            <i class="fa-solid fa-bars-progress invisible"></i
+            ><a href="#habilidades" class="nav__a">Habilidades</a>
+          </li>
+          <li class="nav__li">
+            <i class="fa-solid fa-envelope invisible"></i
+            ><a href="#contacto" class="nav__a">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-	<main>
-		<section id="inicio">
-			<div class="inicio__presentation">
-				<h1 class="inicio__title">Maximiliano Marquez</h1>
-				<h2 class="inicio__subtitle"><strong class="inicio__subtitle-strong">Desarrollador de Software</strong>
-				</h2>
-				<p class="inicio__parrafo">"Desarrollador de software: Combinando innovación y tecnología<br> para crear
-					soluciones digitales robustas y eficientes."</p>
+    <main>
+      <section id="inicio">
+        <div class="inicio__presentation">
+          <h1 class="inicio__title">Maximiliano Marquez</h1>
+          <h2 class="inicio__subtitle">
+            <strong class="inicio__subtitle-strong"
+              >Desarrollador de Software</strong
+            >
+          </h2>
+          <p class="inicio__parrafo">
+            "Desarrollador de software: Combinando innovación y tecnología<br />
+            para crear soluciones digitales robustas y eficientes."
+          </p>
 
-				<div class="inicio__social">
-					<a href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
-						target="_blank" class="inicio__red"><i class="inicio__red-link fa-brands fa-whatsapp"></i></a>
-					<a href="https://www.instagram.com/mmaxo_cc/" target="_blank" class="inicio__red"><i
-							class="inicio__red-link fa-brands fa-instagram"></i></a>
-					<a href="https://github.com/maximarquezz" target="_blank" class="inicio__red"><i
-							class="inicio__red-link fa-brands fa-github"></i></a>
-					<a href="https://www.facebook.com/profile.php?id=100081654195569" target="_blank"
-						class="inicio__red"><i class="inicio__red-link fa-brands fa-facebook"></i></a>
-				</div>
+          <div class="inicio__social">
+            <a
+              href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
+              target="_blank"
+              class="inicio__red"
+              ><i class="inicio__red-link fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mmaxo_cc/"
+              target="_blank"
+              class="inicio__red"
+              ><i class="inicio__red-link fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://github.com/maximarquezz"
+              target="_blank"
+              class="inicio__red"
+              ><i class="inicio__red-link fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100081654195569"
+              target="_blank"
+              class="inicio__red"
+              ><i class="inicio__red-link fa-brands fa-facebook"></i
+            ></a>
+          </div>
 
-				<div class="inicio__downloadCV">
-					<a href="public/assets/pdfs/CV_Marquez.pdf" class="inicio__downloadCVbutton"
-						target="_blank">Curriculum Vitae</a>
-				</div>
-			</div>
+          <div class="inicio__downloadCV">
+            <a
+              href="public/assets/pdfs/CV_Marquez.pdf"
+              class="inicio__downloadCVbutton"
+              target="_blank"
+              >Curriculum Vitae</a
+            >
+          </div>
+        </div>
 
-			<div class="inicio__perfilimg">
-				<img src="public/assets/images/perfil_img.webp" draggable="false" class="inicio__perfilimg-img"
-					alt="Esta es una imagen sobre el autor de la página web.">
-			</div>
-		</section>
+        <div class="inicio__perfilimg">
+          <img
+            src="public/assets/images/perfil_img.webp"
+            draggable="false"
+            class="inicio__perfilimg-img"
+            alt="Esta es una imagen sobre el autor de la página web."
+          />
+        </div>
+      </section>
 
-		<section id="sobremi">
-			<div class="sobremi__img-container">
-				<img src="public/assets/images/perfil_img2.webp" draggable="false" class="sobremi__img" loading="lazy"
-					alt="Esta es una imagen sobre el autor de la página web.">
-			</div>
+      <section id="experiencia">
+        <h3 class="experiencia__title">
+          <span class="material-symbols-outlined">code</span>Experie<span
+            class="experiencia__title--span"
+            >ncia</span
+          ><span class="material-symbols-outlined">code_off</span>
+        </h3>
 
-			<div class="sobremi__info">
-				<h3 class="sobremi__title">
-					<span class="material-symbols-outlined">code</span>Sobre<span class="sobremi__title--span">
-						mí</span><span class="material-symbols-outlined">code_off</span>
-				</h3>
+        <div class="experiencia__timeline">
+          <!-- Item 1 - Izquierda -->
+          <div class="experiencia__item experiencia__item--left">
+            <div class="experiencia__content">
+              <span class="experiencia__fecha">Julio 2025 - Actualidad</span>
+              <h4 class="experiencia__cargo">Desarrollador Full Stack</h4>
+              <p class="experiencia__empresa">
+                InnoBit Solutions / Orion Informática
+              </p>
+              <p class="experiencia__descripcion">
+                Desarrollo de lógica de login con Directus en Angular. Rediseño
+                completo de interfaz con NG-ZORRO. Creación del módulo “Central
+                y Sucursales” y diseño de estructura escalable.
+              </p>
+              <div class="experiencia__tecnologias">
+                <span class="experiencia__tech">Angular</span>
+                <span class="experiencia__tech">Directus</span>
+                <span class="experiencia__tech">NG-ZORRO</span>
+                <span class="experiencia__tech">JavaScript</span>
+              </div>
+            </div>
+          </div>
 
-				<div class="sobremi__card">
-					<ul>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Nombre:</strong> Maximiliano
-						</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Apellido:</strong> Marquez</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Nacimiento:</strong> 15/10/03
-						</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Localidad:</strong> Argentina
-						</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Freelance:</strong> Disponible
-						</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Nivel:</strong> Trainee</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Educación:</strong> Nivel
-							Superior (en curso)</li>
-						<li class="sobremi__item"><strong class="sobremi__item--strong">Carrera:</strong> TS en Análisis
-							y Desarrollo de Software</li>
-					</ul>
+          <!-- Item 2 - Derecha -->
+          <div class="experiencia__item experiencia__item--right">
+            <div class="experiencia__content">
+              <span class="experiencia__fecha">Dic. 2024 - Ago. 2025</span>
+              <h4 class="experiencia__cargo">Desarrollador Full Stack</h4>
+              <p class="experiencia__empresa">ClubSolutions</p>
+              <p class="experiencia__descripcion">
+                Desarrollo de API con Java, Spring, Hibernate, JPA y Lombok.
+                Sistema de enrutamiento manual en PHP y JavaScript.
+                Implementación de módulos de Socios, Localidades y Header.
+                Documentación del proyecto.
+              </p>
+              <div class="experiencia__tecnologias">
+                <span class="experiencia__tech">Java</span>
+                <span class="experiencia__tech">Spring</span>
+                <span class="experiencia__tech">Hibernate</span>
+                <span class="experiencia__tech">PHP</span>
+                <span class="experiencia__tech">JavaScript</span>
+              </div>
+            </div>
+          </div>
 
-					<a href="public/assets/pdfs/CV_Marquez.pdf" class="sobremi__more" target="_blank">
-						Más info... <!--Redirec al CV-->
-					</a>
-				</div>
-			</div>
-		</section>
+          <!-- Item 3 - Izquierda -->
+          <div class="experiencia__item experiencia__item--left">
+            <div class="experiencia__content">
+              <span class="experiencia__fecha">2023</span>
+              <h4 class="experiencia__cargo">Desarrollador Web</h4>
+              <p class="experiencia__empresa">Proyecto Personal</p>
+              <p class="experiencia__descripcion">
+                Desarrollo de sitio web para consumo de la API de Star Wars
+                (SWAPI). Implementación de enrutamiento manual en PHP nativo y
+                maquetación con HTML, CSS y JavaScript.
+              </p>
+              <div class="experiencia__tecnologias">
+                <span class="experiencia__tech">PHP</span>
+                <span class="experiencia__tech">HTML</span>
+                <span class="experiencia__tech">CSS</span>
+                <span class="experiencia__tech">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<section id="proyectos">
-			<h3 class="proyectos__sub-subtitle"><span class="material-symbols-outlined fonts-icons">
-					code
-				</span>Proye<span class="proyectos__sub-subtitle--span">ctos</span><span
-					class="material-symbols-outlined fonts-icons">
-					code_off
-				</span></h3>
+      <section id="sobremi">
+        <h2 class="sobremi__title">
+          Sobre <span class="sobremi__title--span">Mí</span>
+        </h2>
 
-			<div class="proyectos__container">
+        <!-- Métricas que importan -->
+        <div class="sobremi__metrics-grid">
+          <div class="sobremi__metric-card">
+            <div class="sobremi__metric-number">2</div>
+            <div class="sobremi__metric-label">Empleos</div>
+            <div class="sobremi__metric-sublabel">Experiencia real</div>
+          </div>
 
-				<div class="proyectos__card">
-					<h4 class="proyectos__title">APISpring: Productos</h4>
+          <div class="sobremi__metric-card">
+            <div class="sobremi__metric-number">3+</div>
+            <div class="sobremi__metric-label">Años</div>
+            <div class="sobremi__metric-sublabel">En desarrollo</div>
+          </div>
 
-					<div class="proyectos__img proyectos__img--second_photo">
-						<a href="https://github.com/maximarquezz/APISpring.git" target="_blank"
-							class="proyectos__img--signomas">+</a>
-					</div>
+          <div class="sobremi__metric-card">
+            <div class="sobremi__metric-number">12</div>
+            <div class="sobremi__metric-label">Tecnologías</div>
+            <div class="sobremi__metric-sublabel">Aplicadas en proyectos</div>
+          </div>
 
-					<div class="proyectos__card-info">
-						<p class="proyectos__text">API Rest simple diseñada con Spring Boot. Incluye consultas,
-							inserción, actualización y eliminación (CRUD). Una sola entidad: productos.</p>
-						<a href="https://github.com/maximarquezz/APISpring.git" target="_blank"
-							class="proyectos__button">Ver más...</a>
-					</div>
-				</div>
+          <div class="sobremi__metric-card">
+            <div class="sobremi__metric-number">300+</div>
+            <div class="sobremi__metric-label">Commits</div>
+            <div class="sobremi__metric-sublabel">Con cambios robustos</div>
+          </div>
+        </div>
 
-				<div class="proyectos__card">
-					<h4 class="proyectos__title">SWAPI-Consuming</h4>
+        <!-- Stack con años de experiencia -->
+        <div class="sobremi__tech-section">
+          <h3 class="sobremi__tech-title">Stack <span>Principal</span></h3>
+          <div class="sobremi__tech-grid">
+            <div class="sobremi__tech-item">
+              <span class="sobremi__tech-name">Angular</span>
+              <span class="sobremi__tech-years">Intermedio</span>
+            </div>
+            <div class="sobremi__tech-item">
+              <span class="sobremi__tech-name">Laravel</span>
+              <span class="sobremi__tech-years">Básico</span>
+            </div>
+            <div class="sobremi__tech-item">
+              <span class="sobremi__tech-name">Spring</span>
+              <span class="sobremi__tech-years">Intermedio</span>
+            </div>
+            <div class="sobremi__tech-item">
+              <span class="sobremi__tech-name">MySQL</span>
+              <span class="sobremi__tech-years">Intermedio</span>
+            </div>
+          </div>
+        </div>
 
-					<div class="proyectos__img proyectos__img--first_photo">
-						<a href="https://interiordesignexample.netlify.app/" target="_blank"
-							class="proyectos__img--signomas">+</a>
-					</div>
+        <!-- Highlights específicos -->
+        <div class="sobremi__highlights">
+          <div class="sobremi__highlight-tag">📱 Mobile First</div>
+          <div class="sobremi__highlight-tag">🎨 UI/UX Design</div>
+          <div class="sobremi__highlight-tag">💾 Gestión de BD</div>
+          <div class="sobremi__highlight-tag">🔌 APIs RESTful</div>
+          <div class="sobremi__highlight-tag">📐 Arquitectura escalable</div>
+          <div class="sobremi__highlight-tag">🇬🇧 Inglés B1</div>
+        </div>
+      </section>
 
-					<div class="proyectos__card-info">
-						<p class="proyectos__text">Un sitio web dedicado al consumo de APIs (SWAPI y ServAPI) con PHP nativo, con su propio sistema de enrutamiento manual.</p>
-						<a href="https://github.com/maximarquezz/swapi-consuming" target="_blank"
-							class="proyectos__button">Ver más...</a>
-					</div>
-				</div>
+      <section id="proyectos">
+        <h3 class="proyectos__title">
+          <span class="material-symbols-outlined">code</span>
+          Proye<span class="proyectos__title--span">ctos</span>
+          <span class="material-symbols-outlined">code_off</span>
+        </h3>
 
-				<div class="proyectos__card">
-					<h4 class="proyectos__title">CRUD: Cuente Corriente</h4>
+        <!-- Tabs de navegación -->
+        <div class="proyectos__tabs">
+          <button class="proyectos__tab active" data-tab="todos">
+            <i class="fa-solid fa-layer-group"></i> Todos
+          </button>
+          <button class="proyectos__tab" data-tab="colaborativos">
+            <i class="fa-solid fa-users"></i> Colaborativos
+          </button>
+          <button class="proyectos__tab" data-tab="personales">
+            <i class="fa-solid fa-user"></i> Personales
+          </button>
+        </div>
 
-					<div class="proyectos__img proyectos__img--third_photo">
-						<a href="https://github.com/maximarquezz/CRUDCuentaCorriente.git" target="_blank"
-							class="proyectos__img--signomas">+</a>
-					</div>
+        <!-- Contenido: Todos los proyectos -->
+        <div class="proyectos__content active" data-content="todos">
+          <!-- Full Stack -->
+          <div class="proyectos__category">
+            <h4 class="proyectos__category-title">
+              <i class="fa-solid fa-layer-group"></i>
+              Full Stack
+            </h4>
+            <div class="proyectos__grid">
+              <div class="proyectos__card">
+                <div class="proyectos__card-header">
+                  <h5 class="proyectos__card-title">EduAttend</h5>
+                  <span class="proyectos__card-tag"
+                    ><i class="fa-solid fa-user"></i> Personal</span
+                  >
+                </div>
+                <div class="proyectos__card-body">
+                  <p class="proyectos__card-description">
+                    Sistema de gestión de asistencia estudiantil con
+                    implementación de roles de usuario, de caracter Open Source.
+                  </p>
+                  <div class="proyectos__tech-stack">
+                    <span class="proyectos__tech-tag">Angular</span>
+                    <span class="proyectos__tech-tag">Laravel</span>
+                    <span class="proyectos__tech-tag">SCSS</span>
+                    <span class="proyectos__tech-tag">Material</span>
+                  </div>
+                  <div class="proyectos__button-group">
+                    <a
+                      href="https://github.com/maximarquezz/EduAttend"
+                      target="_blank"
+                      class="proyectos__button proyectos__button--half"
+                    >
+                      <i class="fa-brands fa-github"></i> Repo
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="proyectos__button proyectos__button--half proyectos__button--secondary"
+                    >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-					<div class="proyectos__card-info">
-						<p class="proyectos__text">Una aplicación de escritorio (Java) para administrar un sistema de
-							cuenta corriente. Cuenta con un CRUD (Create, Read, Update, Delete).</p>
-						<a href="https://github.com/maximarquezz/CRUDCuentaCorriente.git" target="_blank"
-							class="proyectos__button">Ver más...</a>
-					</div>
-				</div>
-				
+              <div class="proyectos__card">
+                <div class="proyectos__card-header">
+                  <h5 class="proyectos__card-title">ClubSolutions</h5>
+                  <span class="proyectos__card-tag"
+                    ><i class="fa-solid fa-briefcase"></i> Colaborativo</span
+                  >
+                </div>
+                <div class="proyectos__card-body">
+                  <p class="proyectos__card-description">
+                    Sistema completo de gestión para clubes. API REST con Java
+                    Spring y frontend con PHP. Incluye módulos de Socios,
+                    Localidades y sistema de enrutamiento manual.
+                  </p>
+                  <div class="proyectos__tech-stack">
+                    <span class="proyectos__tech-tag">Java</span>
+                    <span class="proyectos__tech-tag">Spring</span>
+                    <span class="proyectos__tech-tag">PHP</span>
+                    <span class="proyectos__tech-tag">MySQL</span>
+                  </div>
+                  <button
+                    class="proyectos__button proyectos__button--disabled"
+                    disabled
+                  >
+                    <i class="fa-solid fa-lock"></i> Privado
+                  </button>
+                </div>
+              </div>
 
-			</div>
-		</section>
+              <div class="proyectos__card">
+                <div class="proyectos__card-header">
+                  <h5 class="proyectos__card-title">InnoBit - Orion</h5>
+                  <span class="proyectos__card-tag"
+                    ><i class="fa-solid fa-briefcase"></i> Colaborativo</span
+                  >
+                </div>
+                <div class="proyectos__card-body">
+                  <p class="proyectos__card-description">
+                    Sistema de autenticación con Directus en Angular. Rediseño
+                    completo con NG-ZORRO y módulo escalable de Central y
+                    Sucursales.
+                  </p>
+                  <div class="proyectos__tech-stack">
+                    <span class="proyectos__tech-tag">Angular</span>
+                    <span class="proyectos__tech-tag">Directus</span>
+                    <span class="proyectos__tech-tag">NG-ZORRO</span>
+                    <span class="proyectos__tech-tag">Bootstrap</span>
+                  </div>
+                  <button
+                    class="proyectos__button proyectos__button--disabled"
+                    disabled
+                  >
+                    <i class="fa-solid fa-lock"></i> Privado
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<section id="habilidades">
-			<h3 class="habilidades__title">
-				<span class="material-symbols-outlined">code</span>Habilid<span
-					class="habilidades__title--span">ades</span><span class="material-symbols-outlined">code_off</span>
-			</h3>
+          <!-- Contenedor combinado: Back-End + Desktop/Front-End EN LA MISMA FILA -->
+          <div class="proyectos__combined-row">
+            <!-- Back-End (1 columna) -->
+            <div class="proyectos__category proyectos__category--backend">
+              <h4 class="proyectos__category-title">
+                <i class="fa-solid fa-server"></i>
+                Back-End
+              </h4>
+              <div class="proyectos__card">
+                <div class="proyectos__card-header">
+                  <h5 class="proyectos__card-title">APISpring: Productos</h5>
+                  <span class="proyectos__card-tag"
+                    ><i class="fa-solid fa-user"></i> Personal</span
+                  >
+                </div>
+                <div class="proyectos__card-body">
+                  <p class="proyectos__card-description">
+                    API REST completa diseñada con Spring Boot. Implementa CRUD
+                    completo para gestión de productos con arquitectura
+                    escalable.
+                  </p>
+                  <div class="proyectos__tech-stack">
+                    <span class="proyectos__tech-tag">Java</span>
+                    <span class="proyectos__tech-tag">Spring Boot</span>
+                    <span class="proyectos__tech-tag">JPA</span>
+                    <span class="proyectos__tech-tag">MySQL</span>
+                  </div>
+                  <a
+                    href="https://github.com/maximarquezz/APISpring.git"
+                    target="_blank"
+                    class="proyectos__button"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver repositorio
+                  </a>
+                </div>
+              </div>
+            </div>
 
-			<div class="habilidades__container">
+            <!-- Desktop / Front-End (2 columnas) -->
+            <div class="proyectos__category proyectos__category--frontend">
+              <h4 class="proyectos__category-title">
+                <i class="fa-solid fa-desktop"></i>
+                Desktop / Front-End
+              </h4>
+              <div class="proyectos__grid proyectos__grid--two-items">
+                <div class="proyectos__card">
+                  <div class="proyectos__card-header">
+                    <h5 class="proyectos__card-title">
+                      CRUD: Cuenta Corriente
+                    </h5>
+                    <span class="proyectos__card-tag"
+                      ><i class="fa-solid fa-user"></i> Personal</span
+                    >
+                  </div>
+                  <div class="proyectos__card-body">
+                    <p class="proyectos__card-description">
+                      Aplicación de escritorio en Java para administración de
+                      cuentas corrientes. Interfaz intuitiva con operaciones
+                      CRUD completas.
+                    </p>
+                    <div class="proyectos__tech-stack">
+                      <span class="proyectos__tech-tag">Java</span>
+                      <span class="proyectos__tech-tag">Swing</span>
+                      <span class="proyectos__tech-tag">MySQL</span>
+                    </div>
+                    <a
+                      href="https://github.com/maximarquezz/CRUDCuentaCorriente.git"
+                      target="_blank"
+                      class="proyectos__button"
+                    >
+                      <i class="fa-brands fa-github"></i> Ver repositorio
+                    </a>
+                  </div>
+                </div>
 
-				<div class="habilidades__principal">
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">HTML</h4>
-							<p class="habilidades__cardprogresspercent">90%</p>
-						</div>
+                <div class="proyectos__card">
+                  <div class="proyectos__card-header">
+                    <h5 class="proyectos__card-title">SWAPI-Consuming</h5>
+                    <span class="proyectos__card-tag"
+                      ><i class="fa-solid fa-user"></i> Personal</span
+                    >
+                  </div>
+                  <div class="proyectos__card-body">
+                    <p class="proyectos__card-description">
+                      Sitio web dedicado al consumo de APIs (SWAPI) con PHP
+                      nativo, implementando un sistema de enrutamiento manual
+                      desde cero.
+                    </p>
+                    <div class="proyectos__tech-stack">
+                      <span class="proyectos__tech-tag">PHP</span>
+                      <span class="proyectos__tech-tag">HTML</span>
+                      <span class="proyectos__tech-tag">CSS</span>
+                      <span class="proyectos__tech-tag">JavaScript</span>
+                    </div>
+                    <div class="proyectos__button-group">
+                      <a
+                        href="https://github.com/maximarquezz/swapi-consuming"
+                        target="_blank"
+                        class="proyectos__button proyectos__button--half"
+                      >
+                        <i class="fa-brands fa-github"></i> Repo
+                      </a>
+                      <a
+                        href="https://interiordesignexample.netlify.app/"
+                        target="_blank"
+                        class="proyectos__button proyectos__button--half proyectos__button--secondary"
+                      >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<progress class="habilidades__progress" value="90" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">CSS</h4>
-							<p class="habilidades__cardprogresspercent">75%</p>
-						</div>
+        <!-- Contenido: Proyectos Colaborativos -->
+        <div class="proyectos__content" data-content="colaborativos">
+          <div class="proyectos__grid proyectos__grid--centered">
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">ClubSolutions</h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-layer-group"></i> Full Stack</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  Sistema completo de gestión para clubes. API REST con Java
+                  Spring y frontend con PHP. Incluye módulos de Socios,
+                  Localidades y sistema de enrutamiento manual.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">Java</span>
+                  <span class="proyectos__tech-tag">Spring</span>
+                  <span class="proyectos__tech-tag">PHP</span>
+                  <span class="proyectos__tech-tag">MySQL</span>
+                </div>
+                <button
+                  class="proyectos__button proyectos__button--disabled"
+                  disabled
+                >
+                  <i class="fa-solid fa-lock"></i> Privado
+                </button>
+              </div>
+            </div>
 
-						<progress class="habilidades__progress" value="75" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">SASS</h4>
-							<p class="habilidades__cardprogresspercent">70%</p>
-						</div>
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">
+                  InnoBit - Orion Informática
+                </h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-code"></i> Front-End</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  Sistema de autenticación con Directus en Angular. Rediseño
+                  completo de interfaz con NG-ZORRO y creación de módulo
+                  escalable.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">Angular</span>
+                  <span class="proyectos__tech-tag">Directus</span>
+                  <span class="proyectos__tech-tag">NG-ZORRO</span>
+                </div>
+                <button
+                  class="proyectos__button proyectos__button--disabled"
+                  disabled
+                >
+                  <i class="fa-solid fa-lock"></i> Privado
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<progress class="habilidades__progress" value="70" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">JavaScript</h4>
-							<p class="habilidades__cardprogresspercent">40%</p>
-						</div>
+        <!-- Contenido: Proyectos Personales -->
+        <div class="proyectos__content" data-content="personales">
+          <div class="proyectos__grid">
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">EduAttend</h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-layer-group"></i> Full Stack</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  Sistema de gestión de asistencia estudiantil con
+                  implementación de roles de usuario, de caracter Open Source.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">Angular</span>
+                  <span class="proyectos__tech-tag">Laravel</span>
+                  <span class="proyectos__tech-tag">SCSS</span>
+                  <span class="proyectos__tech-tag">Material</span>
+                </div>
+                <div class="proyectos__button-group">
+                  <a
+                    href="https://github.com/maximarquezz/EduAttend"
+                    target="_blank"
+                    class="proyectos__button proyectos__button--half"
+                  >
+                    <i class="fa-brands fa-github"></i> Repo
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="proyectos__button proyectos__button--half proyectos__button--secondary"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-						<progress class="habilidades__progress" value="40" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">Java</h4>
-							<p class="habilidades__cardprogresspercent">70%</p>
-						</div>
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">SWAPI-Consuming</h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-layer-group"></i> Full Stack</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  Sitio web dedicado al consumo de APIs (SWAPI) con PHP nativo,
+                  implementando un sistema de enrutamiento manual desde cero.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">PHP</span>
+                  <span class="proyectos__tech-tag">HTML</span>
+                  <span class="proyectos__tech-tag">CSS</span>
+                  <span class="proyectos__tech-tag">JavaScript</span>
+                </div>
+                <div class="proyectos__button-group">
+                  <a
+                    href="https://github.com/maximarquezz/swapi-consuming"
+                    target="_blank"
+                    class="proyectos__button proyectos__button--half"
+                  >
+                    <i class="fa-brands fa-github"></i> Repo
+                  </a>
+                  <a
+                    href="https://interiordesignexample.netlify.app/"
+                    target="_blank"
+                    class="proyectos__button proyectos__button--half proyectos__button--secondary"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
 
-						<progress class="habilidades__progress" value="60" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">MySQL</h4>
-							<p class="habilidades__cardprogresspercent">50%</p>
-						</div>
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">APISpring: Productos</h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-server"></i> Back-End</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  API REST completa diseñada con Spring Boot. Implementa CRUD
+                  completo para gestión de productos con arquitectura escalable.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">Java</span>
+                  <span class="proyectos__tech-tag">Spring Boot</span>
+                  <span class="proyectos__tech-tag">JPA</span>
+                  <span class="proyectos__tech-tag">MySQL</span>
+                </div>
+                <a
+                  href="https://github.com/maximarquezz/APISpring.git"
+                  target="_blank"
+                  class="proyectos__button"
+                >
+                  <i class="fa-brands fa-github"></i> Ver repositorio
+                </a>
+              </div>
+            </div>
 
-						<progress class="habilidades__progress" value="50" max="100"></progress>
-					</div>
-					<div class="habilidades__carddescription">
-						<div class="habilidades__textcontainer">
-							<h4 class="habilidades__cardtext">MongoDB</h4>
-							<p class="habilidades__cardprogresspercent">20%</p>
-						</div>
+            <div class="proyectos__card">
+              <div class="proyectos__card-header">
+                <h5 class="proyectos__card-title">CRUD: Cuenta Corriente</h5>
+                <span class="proyectos__card-tag"
+                  ><i class="fa-solid fa-desktop"></i> Desktop</span
+                >
+              </div>
+              <div class="proyectos__card-body">
+                <p class="proyectos__card-description">
+                  Aplicación de escritorio en Java para administración de
+                  cuentas corrientes. Interfaz intuitiva con operaciones CRUD
+                  completas.
+                </p>
+                <div class="proyectos__tech-stack">
+                  <span class="proyectos__tech-tag">Java</span>
+                  <span class="proyectos__tech-tag">Swing</span>
+                  <span class="proyectos__tech-tag">MySQL</span>
+                </div>
+                <a
+                  href="https://github.com/maximarquezz/CRUDCuentaCorriente.git"
+                  target="_blank"
+                  class="proyectos__button"
+                >
+                  <i class="fa-brands fa-github"></i> Ver repositorio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<progress class="habilidades__progress" value="25" max="100"></progress>
-					</div>
-				</div>
+      <section id="habilidades">
+        <h3 class="habilidades__title">
+          <span class="material-symbols-outlined">code</span>Habilid<span
+            class="habilidades__title--span"
+            >ades</span
+          ><span class="material-symbols-outlined">code_off</span>
+        </h3>
 
-				<div class="habilidades__code">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/html.svg"
-						class="habilidades__img" alt="logo de html">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/css.svg"
-						class="habilidades__img" alt="logo de css">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/sass.svg"
-						class="habilidades__img" alt="logo de sass">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/javascript.svg"
-						class="habilidades__img" alt="logo de javascript">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/java.svg"
-						class="habilidades__img" alt="logo de java">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/mysql.svg"
-						class="habilidades__img" alt="logo de mysql">
-					<img loading="lazy" draggable="false" src="public/assets/images/svg/mongodb.svg"
-						class="habilidades__img" alt="logo de mongodb">
-				</div>
-			</div>
-		</section>
+        <div class="habilidades__carousel-container">
+          <div class="habilidades__carousel-track">
+            <!-- Primera serie de logos -->
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/html.svg"
+                alt="HTML5"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/css.svg"
+                alt="CSS3"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/sass.svg"
+                alt="SASS"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/javascript.svg"
+                alt="JavaScript"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/java.svg"
+                alt="Java"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/mysql.svg"
+                alt="MySQL"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/mongodb.svg"
+                alt="MongoDB"
+              />
+            </div>
 
-		<section id="contacto">
-			<h3 class="contacto__title">
-				<span class="material-symbols-outlined">code</span>Cont<span
-					class="contacto__title--span">acto</span><span class="material-symbols-outlined">code_off</span>
-			</h3>
+            <!-- Segunda serie (duplicada para efecto infinito) -->
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/html.svg"
+                alt="HTML5"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/css.svg"
+                alt="CSS3"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/sass.svg"
+                alt="SASS"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/javascript.svg"
+                alt="JavaScript"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/java.svg"
+                alt="Java"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/mysql.svg"
+                alt="MySQL"
+              />
+            </div>
+            <div class="habilidades__logo-item">
+              <img
+                loading="lazy"
+                draggable="false"
+                src="public/assets/images/svg/mongodb.svg"
+                alt="MongoDB"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<div class="contacto__container">
+      <section id="contacto">
+        <h3 class="contacto__title">
+          <span class="material-symbols-outlined">code</span>Cont<span
+            class="contacto__title--span"
+            >acto</span
+          ><span class="material-symbols-outlined">code_off</span>
+        </h3>
 
-				<div class="contacto__otrasredes">
-					<a href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
-						target="_blank" class="contacto__socialcard"><i class="fa-brands fa-whatsapp"></i> +54 9 3435
-						41-0439</a>
-					<a href="https://www.instagram.com/marquezmaxi_/" target="_blank" class="contacto__socialcard"><i
-							class="fa-brands fa-instagram"></i>@marquezmaxi_</a>
-					<a href="https://www.facebook.com/profile.php?id=100081654195569" target="_blank"
-						class="contacto__socialcard"><i class="fa-brands fa-facebook"></i>Maxi Marquez</a>
-					<a href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/" target="_blank"
-						class="contacto__socialcard"><i class="fa-brands fa-linkedin"></i>Maximiliano (Ezequiel)
-						Marquez</a>
-					<a href="mailto:maximarquez122@gmail.com" target="_blank" class="contacto__socialcard"><i
-							class="fa-brands fa-google"></i>marquezmaxi122@gmail.com</a>
-				</div>
+        <div class="contacto__container">
+          <div class="contacto__otrasredes">
+            <a
+              href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
+              target="_blank"
+              class="contacto__socialcard"
+              ><i class="fa-brands fa-whatsapp"></i> +54 9 3435 41-0439</a
+            >
+            <a
+              href="https://www.instagram.com/marquezmaxi_/"
+              target="_blank"
+              class="contacto__socialcard"
+              ><i class="fa-brands fa-instagram"></i>@marquezmaxi_</a
+            >
+            <a
+              href="https://www.facebook.com/profile.php?id=100081654195569"
+              target="_blank"
+              class="contacto__socialcard"
+              ><i class="fa-brands fa-facebook"></i>Maxi Marquez</a
+            >
+            <a
+              href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/"
+              target="_blank"
+              class="contacto__socialcard"
+              ><i class="fa-brands fa-linkedin"></i>Maximiliano (Ezequiel)
+              Marquez</a
+            >
+            <a
+              href="mailto:maximarquez122@gmail.com"
+              target="_blank"
+              class="contacto__socialcard"
+              ><i class="fa-brands fa-google"></i>marquezmaxi122@gmail.com</a
+            >
+          </div>
 
-				<div class="line-between"></div>
+          <div class="line-between"></div>
 
-				<div class="contacto__form">
-					<form action="https://formsubmit.co/marquezmaxi122@gmail.com" method="post">
-						<label for="nombre">Nombre y apellido
-							<input type="text" name="name" id="nombre" placeholder="Escribe tu nombre completo...">
-						</label>
-						<label for="email">Email
-							<input type="email" name="email" id="email" placeholder="Ingresa tu email...">
-						</label>
-						<label for="mensaje">Mensaje
-							<textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
-						</label>
+          <div class="contacto__form">
+            <form
+              action="https://formsubmit.co/marquezmaxi122@gmail.com"
+              method="post"
+            >
+              <label for="nombre"
+                >Nombre y apellido
+                <input
+                  type="text"
+                  name="name"
+                  id="nombre"
+                  placeholder="Escribe tu nombre completo..."
+                />
+              </label>
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ingresa tu email..."
+                />
+              </label>
+              <label for="mensaje"
+                >Mensaje
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  placeholder="Escribe tu mensaje..."
+                ></textarea>
+              </label>
 
-						<button>Enviar</button>
-					</form>
-				</div>
+              <button>Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-			</div>
-		</section>
-		<footer class="footer">
-			<div class="footer__allcontainer">
-				<div class="footer__section">
-					<h4 class="footer__title">Secciones</h4>
-					<a href="#init" class="footer__secciones">Inicio</a>
-					<a href="#sobremi" class="footer__secciones">Sobre mí</a>
-					<a href="#proyectos" class="footer__secciones">Proyectos</a>
-					<a href="#habilidades" class="footer__secciones">Habilidades</a>
-					<a href="#contacto" class="footer__secciones">Contacto</a>
-				</div>
+      <footer class="footer">
+        <div class="footer__allcontainer">
+          <div class="footer__section">
+            <h4 class="footer__title">Secciones</h4>
+            <a href="#init" class="footer__secciones">Inicio</a>
+            <a href="#sobremi" class="footer__secciones">Sobre mí</a>
+            <a href="#proyectos" class="footer__secciones">Proyectos</a>
+            <a href="#habilidades" class="footer__secciones">Habilidades</a>
+            <a href="#contacto" class="footer__secciones">Contacto</a>
+          </div>
 
-				<div class="footer__line-between"></div>
+          <div class="footer__line-between"></div>
 
-				<div class="footer__section">
-					<h4 class="footer__title">Social</h4>
-					<a href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
-						target="_blank" class="footer__social">WhatsApp</a>
-					<a href="https://www.instagram.com/mmaxo_cc/" target="_blank" class="footer__social">Instagram</a>
-					<a href="https://www.facebook.com/profile.php?id=100081654195569" target="_blank"
-						class="footer__social">Facebook</a>
-					<a href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/" target="_blank"
-						class="footer__social">LinkedIn</a>
-					<a href="mailto:maximarquez122@gmail.com" target="_blank" class="footer__social">Gmail</a>
-					<a href="https://github.com/maximarquezz" target="_blank" class="footer__social">GitHub</a>
-				</div>
+          <div class="footer__section">
+            <h4 class="footer__title">Social</h4>
+            <a
+              href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
+              target="_blank"
+              class="footer__social"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/mmaxo_cc/"
+              target="_blank"
+              class="footer__social"
+              >Instagram</a
+            >
+            <a
+              href="https://www.facebook.com/profile.php?id=100081654195569"
+              target="_blank"
+              class="footer__social"
+              >Facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/"
+              target="_blank"
+              class="footer__social"
+              >LinkedIn</a
+            >
+            <a
+              href="mailto:maximarquez122@gmail.com"
+              target="_blank"
+              class="footer__social"
+              >Gmail</a
+            >
+            <a
+              href="https://github.com/maximarquezz"
+              target="_blank"
+              class="footer__social"
+              >GitHub</a
+            >
+          </div>
 
-				<div class="footer__line-between"></div>
+          <div class="footer__line-between"></div>
 
-				<div class="footer__section">
-					<h4 class="footer__title">Trabajo</h4>
-					<a href="https://maps.app.goo.gl/Ng6so48y8SsosaN4A" target="_blank" class="footer__help"><i
-							class="fa-solid fa-map-location-dot"></i>Nogoyá, Entre Ríos</a>
-					<a href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
-						target="_blank" class="footer__help"><i class="fa-solid fa-phone"></i>+54 9 3435 41-0439</a>
-					<a href="mailto:maximarquez122@gmail.com" target="_blank" class="footer__help"><i
-							class="fa-solid fa-envelope"></i>maximarquez122@gmail.com</a>
-					<a href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/" target="_blank"
-						class="footer__help"><i class="fa-brands fa-linkedin"></i>Maximiliano (Ezequiel) Marquez</a>
-				</div>
+          <div class="footer__section">
+            <h4 class="footer__title">Trabajo</h4>
+            <a
+              href="https://maps.app.goo.gl/Ng6so48y8SsosaN4A"
+              target="_blank"
+              class="footer__help"
+              ><i class="fa-solid fa-map-location-dot"></i>Nogoyá, Entre Ríos</a
+            >
+            <a
+              href="https://wa.me/543435410439?text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20contigo."
+              target="_blank"
+              class="footer__help"
+              ><i class="fa-solid fa-phone"></i>+54 9 3435 41-0439</a
+            >
+            <a
+              href="mailto:maximarquez122@gmail.com"
+              target="_blank"
+              class="footer__help"
+              ><i class="fa-solid fa-envelope"></i>maximarquez122@gmail.com</a
+            >
+            <a
+              href="https://www.linkedin.com/in/maximiliano-m%C3%A1rquez-023798240/"
+              target="_blank"
+              class="footer__help"
+              ><i class="fa-brands fa-linkedin"></i>Maximiliano (Ezequiel)
+              Marquez</a
+            >
+          </div>
 
-				<div class="footer__line-between"></div>
+          <div class="footer__line-between"></div>
 
-				<div class="footer__section">
-					<h4 class="footer__title">Curriculum</h4>
-					<p class="footer__curriculumtext">Si deseas obtener más información sobre mí en el ámbito personal
-						y/o profesional, te recomiendo que visites mi currículum vitae.</p>
-					<a href="public/assets/pdfs/CV_Marquez.pdf" class="footer__curriculumbutton"
-						target="_blank">Descargar CV</a>
-				</div>
-			</div>
+          <div class="footer__section">
+            <h4 class="footer__title">Curriculum</h4>
+            <p class="footer__curriculumtext">
+              Si deseas obtener más información sobre mí en el ámbito personal
+              y/o profesional, te recomiendo que visites mi currículum vitae.
+            </p>
+            <a
+              href="public/assets/pdfs/CV_Marquez.pdf"
+              class="footer__curriculumbutton"
+              target="_blank"
+              >Descargar CV</a
+            >
+          </div>
+        </div>
 
-			<div class="footer__copy">
-				<small class="footer__copytext">© 2024 Maximiliano Marquez. Todos los derechos reservados. Propiedad
-					intelectual protegida.</small>
-			</div>
-		</footer>
-
-	</main>
-</body>
-
+        <div class="footer__copy">
+          <small class="footer__copytext"
+            >© 2024 Maximiliano Marquez. Todos los derechos reservados.
+            Propiedad intelectual protegida.</small
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

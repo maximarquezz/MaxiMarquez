@@ -1,164 +1,169 @@
 /*_inicio.scss*/
-@use '../global/_variables.scss' as variables;
-@use '../global/utils' as utils;
-@use '../global/animations' as animations;
-@use '../components/button' as button;
+@use "../global/_variables.scss" as variables;
+@use "../global/utils" as utils;
+@use "../global/animations" as animations;
+@use "../components/button" as button;
 
-#inicio{
-    width: 100vw;
-    height: 86vh;
-    @extend.flex-row_spc-evly;
+#inicio {
+  width: 100vw;
+  height: 86vh;
+  @extend .flex-row_spc-evly;
+  background-image: linear-gradient(
+      rgba(variables.$second-bg-color, 1),
+      rgba(variables.$second-bg-color, 1)
+    ),
+    url("../../public/assets/images/hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-    .inicio__sub-subtitle,
-    .inicio__title,
-    .inicio__subtitle{
-        padding: 4px;
-    }
+.inicio__sub-subtitle,
+.inicio__title,
+.inicio__subtitle {
+  padding: 4px;
+}
 
-    .inicio__sub-subtitle{
-        font-size: 1.3rem;
-    }
-    
-    .inicio__title{
-        font-size: 3rem;
-    }
-    
-    .inicio__subtitle{
-        font-size: 1.7rem;
-        
-        &-strong{
-            @extend .animation_color-text_6s;
-        }
-    }
+.inicio__sub-subtitle {
+  font-size: 1.3rem;
+}
 
-    .inicio__parrafo,
-    .inicio__social{
-        margin-top: 15px;
-    }
-    
-    .inicio__parrafo{
-        line-height: 1.5rem;
-        font-size: 1rem;
-        padding: 6px;
-    }
-    
-    .inicio__red{
-        color: variables.$main-color;
-        padding: 6px;
-        @extend .transition_color-textshadow;
+.inicio__title {
+  font-size: 3rem;
+  color: variables.$main-color;
+}
 
-        &:hover{
-            text-shadow: 0 0 20px variables.$main-color;
-        }
-    }
+.inicio__subtitle {
+  font-size: 1.7rem;
 
-    .inicio__red-link{
-        font-size: 2.5rem;
-    }
-    
-    .inicio__downloadCVbutton{
-        @extend .btn;
-        padding: 15px;
-        margin-left: 4px;
-    }
-    
-    .inicio__perfilimg{
-        @extend .profileimg_container-properties;
-    }
-    
-    .inicio__perfilimg-img{
-        @extend .profileimg_properties;
-        @extend .animation_image-glow;
-    }
+  &-strong {
+    @extend .animation_color-text_6s;
+  }
+}
+
+.inicio__parrafo,
+.inicio__social {
+  margin-top: 15px;
+}
+
+.inicio__parrafo {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 6px;
+}
+
+.inicio__red {
+  color: variables.$main-color;
+  padding: 6px;
+  @extend .transition_color-textshadow;
+
+  &:hover {
+    text-shadow: 0 0 20px variables.$main-color;
+  }
+}
+
+.inicio__red-link {
+  font-size: 2.5rem;
+}
+
+.inicio__downloadCVbutton {
+  @extend .btn;
+  padding: 15px;
+  margin-left: 4px;
+}
+
+.inicio__perfilimg {
+  @extend .profileimg_container-properties;
+}
+
+.inicio__perfilimg-img {
+  @extend .profileimg_properties;
+  @extend .animation_image-glow;
+}
 
 // Media query para 320x535
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+  #inicio {
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 1.7rem;
+  }
 
-    #inicio{
-        flex-wrap: wrap;
-        height: fit-content;
-        padding: 1.7rem;
-    }
+  .inicio__presentation {
+    background-color: rgba(variables.$second-bg-color, 0.95);
+    padding: 30px;
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+  }
 
-    .inicio__presentation{
-        background-color: variables.$second-bg-color;
-        padding: 30px;
-        width: 100%;
-        height: fit-content;
-        border-radius: 20px;
-    }
+  .inicio__perfilimg {
+    display: none;
+  }
 
-    .inicio__perfilimg{
-        display: none;
-    }
+  .inicio__perfilimg img {
+    display: none;
+  }
 
-    .inicio__perfilimg img{
-        display: none;
-    }
+  .inicio__sub-subtitle {
+    display: none;
+    text-align: center;
+  }
 
-    .inicio__sub-subtitle{
-        display: none;
-        text-align: center;
-    }
+  .inicio__subtitle {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    text-align: center;
+  }
 
-    .inicio__subtitle{
-        font-size: 1.3rem;
-        margin-top: 5px;
-        text-align: center;
-    }
+  .inicio__title {
+    margin-top: 5px;
+    text-align: center;
+  }
 
-    .inicio__title{
-        margin-top: 5px;
-        text-align: center;
-    }
+  .inicio__social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
 
-    .inicio__social{
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 15px;
-    }
+  .inicio__red-link {
+    font-size: 3.5rem;
+  }
 
-    .inicio__red-link{
-        font-size: 3.5rem;
-    }
+  .inicio__downloadCVbutton {
+    width: 100%;
+    margin-top: 20px;
+  }
 
-    .inicio__downloadCVbutton{
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    .inicio__parrafo{
-        margin-top: 20px;
-    }
-
+  .inicio__parrafo {
+    margin-top: 20px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #inicio {
+    padding: 1.7rem;
+  }
 
-    #inicio{
-        padding: 1.7rem;
-    }
+  .inicio__sub-subtitle {
+    font-size: 1rem;
+  }
 
-    .inicio__sub-subtitle{
-        font-size: 1rem;
-    }
+  .inicio__title {
+    font-size: 2rem;
+  }
 
-    .inicio__title{
-        font-size: 2rem;
-    }
+  .inicio__subtitle {
+    font-size: 1.4rem;
+  }
 
-    .inicio__subtitle{
-        font-size: 1.4rem;
-    }
+  .inicio__parrafo {
+    font-size: 0.8rem;
+  }
 
-    .inicio__parrafo{
-        font-size: .8rem;
-    }
-
-    .inicio__perfilimg{
-        width: 22rem;
-        height: 22rem;
-    }
-
+  .inicio__perfilimg {
+    width: 22rem;
+    height: 22rem;
+  }
 }

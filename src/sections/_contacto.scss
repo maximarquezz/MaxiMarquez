@@ -1,233 +1,229 @@
 /*_contacto.scss*/
-@use '../global/animations' as animations;
-@use '../global/variables' as variables;
-@use '../global/utils' as utils;
-@use '../components/button' as button;
-@use '../global/icons' as icons;
+@use "../global/animations" as animations;
+@use "../global/variables" as variables;
+@use "../global/utils" as utils;
+@use "../components/button" as button;
+@use "../global/icons" as icons;
 
-#contacto{
-    @extend .sections_w-and-h;
-    background-color: variables.$bg-color;
-    @extend .flex-col_spc-evly;
+#contacto {
+  @extend .sections_w-and-h;
+  background-color: variables.$bg-color;
+  @extend .flex-col_spc-evly;
 }
 
-.contacto__container{
-    @extend .flex-row_spc-evly;
+.contacto__container {
+  @extend .flex-row_spc-evly;
+  width: 100%;
+  height: 75vh;
+}
+
+.contacto__otrasredes {
+  height: 100%;
+  width: 40vw;
+  @extend .flex-col_spc-btw;
+
+  a {
+    text-decoration: none;
+    color: variables.$text-color;
+  }
+
+  i {
+    color: variables.$bg-color;
+    background-color: variables.$main-color;
+    padding: 10px;
+    font-size: 2rem;
+    @extend .border-rad_50percent;
+  }
+}
+
+.contacto__socialcard {
+  background-color: variables.$second-bg-color;
+  width: 100%;
+  padding: 15px;
+  @extend .border-rad_20px;
+  @extend .flex-row_spc-btw;
+  @extend .transition_color-textshadow;
+
+  &:hover {
+    color: variables.$main-color;
+    text-shadow: 0 0 20px variables.$main-color;
+  }
+}
+
+.line-between {
+  width: 2px;
+  height: 90%;
+  background-color: variables.$second-bg-color;
+  @extend .border-rad_20px;
+}
+
+.contacto__form {
+  width: 40vw;
+  @extend .flex-col_spc-evly;
+  height: 100%;
+  padding: 1.5rem;
+  @extend .border-rad_20px;
+  background-color: variables.$second-bg-color;
+
+  label {
+    @extend .animation_color-text_6s;
+    font-size: 1.1rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::-moz-placeholder {
+      color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
+
+    &::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  input,
+  textarea {
     width: 100%;
-    height: 75vh;
+    margin: 6px 0 20px 0;
+    font-family: "Poppins", comic sans;
+    @extend .border-rad_10px;
+    border: none;
+    padding: 10px;
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  button {
+    @extend .btn-secondary;
+    @extend .border-rad_10px;
+    border: none;
+  }
 }
 
-.contacto__otrasredes{
+.contacto__title {
+  font-size: 3rem;
+
+  &--span {
+    @extend .animation_color-text_6s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contacto {
+    height: fit-content;
+    padding: 0 1.7rem 1.7rem 1.7rem;
+  }
+
+  .contacto__title {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .contacto__container {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacto__otrasredes {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .contacto__otrasredes i {
+    font-size: 0.9rem;
+  }
+
+  .contacto__socialcard {
+    padding: 0 10px 0 0;
+    font-size: 0.8rem;
+    margin: 2px 0;
+  }
+
+  .contacto__socialcard:last-child {
+    display: none;
+  }
+
+  .line-between {
+    display: none;
+  }
+
+  .contacto__form {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    padding: 1.2rem;
+  }
+
+  .contacto__form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
-    width: 40vw;
-    @extend .flex-col_spc-btw;
-
-    a{ 
-        text-decoration: none;
-        color: variables.$text-color;
-    }
-
-    i{
-        color: variables.$bg-color;
-        background-color: variables.$main-color;
-        padding: 10px;
-        font-size: 2rem;
-        @extend .border-rad_50percent;
-    }
-}
-
-.contacto__socialcard{
-    background-color: variables.$second-bg-color;
     width: 100%;
-    padding: 15px;
-    @extend .border-rad_20px;
-    @extend .flex-row_spc-btw;
-    @extend .transition_color-textshadow;
+  }
 
-    &:hover{
-        color: variables.$main-color;
-        text-shadow: 0 0 20px variables.$main-color;
-    }
+  .contacto__form label {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .contacto__form input,
+  .contacto__form textarea {
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 7px;
+    margin: 10px 0;
+  }
+
+  .contacto__form textarea {
+    height: 150px;
+  }
+
+  .contacto__form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }
 
-.line-between{
-    width: 2px;
-    height: 90%;
-    background-color: variables.$second-bg-color;
-    @extend .border-rad_20px;
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #contacto {
+    padding: 1.7rem;
+  }
 
-.contacto__form{
-    width: 40vw;
-    @extend .flex-col_spc-evly;
-    height: full;
-    padding: 1.5rem;
-    @extend .border-rad_20px;
-    background-color: variables.$second-bg-color;
+  .contacto__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-    label{
-        @extend .animation_color-text_6s;
-        font-size: 1.1rem;
-    }
+  .contacto__socialcard {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 
-    input:focus,
-    textarea:focus{
-        outline: none;
-
-        &::-webkit-input-placeholder{
-            color: transparent;
-        }
-
-        &::-moz-placeholder{
-            color: transparent;
-        }
-
-        &:-ms-input-placeholder{
-            color: transparent;
-        }
-
-        &::-ms-input-placeholder{
-            color: transparent;
-        }
-
-        &::placeholder{
-            color: transparent;
-        }
-    }
-
-    input,
-    textarea{
-        width: 100%;
-        margin: 6px 0 20px 0;
-        font-family: 'Poppins', comic sans;
-        @extend .border-rad_10px;
-        border: none;
-        padding: 10px;
-    }
-
-    textarea{
-        resize: none;
-        height: 150px;
-    }
-
-    button{
-        @extend .btn-secondary;
-        @extend .border-rad_10px;
-        border: none;
-    }
-}
-
-.contacto__title{
-    font-size: 3rem;
-
-    &--span{
-        @extend .animation_color-text_6s;
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    #contacto{
-        height: fit-content;
-        padding: 0 1.7rem 1.7rem 1.7rem;
-    }
-
-    .contacto__title{
-        font-size: 2rem;
-        margin: 20px 0;
-    }
-
-    .contacto__container{
-        width: 100%;
-        height: fit-content;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-    }
-
-    .contacto__otrasredes{
-        width: 100%;
-        height: fit-content;
-        padding: 0;
-    }
-
-    .contacto__otrasredes i{
-        font-size: 0.9rem;
-    }
-
-    .contacto__socialcard{
-        padding: 0 10px 0 0;
-        font-size: 0.8rem;
-        margin: 2px 0;
-    }
-
-    .contacto__socialcard:last-child{
-        display: none;
-    }
-
-    .line-between{
-        display: none;
-    }
-
-    .contacto__form{
-        margin-top: 15px;
-        width: 100%;
-        height: auto;
-        padding: 1.2rem;
-    }
-
-    .contacto__form form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 100%;
-        width: 100%;
-    }
-
-    .contacto__form label{
-        font-size: 0.8rem;
-        width: 100%;
-    }
-
-    .contacto__form input,
-    .contacto__form textarea{
-        width: 100%;
-        font-size: 0.7rem;
-        padding: 7px;
-        margin: 10px 0;
-    }
-    
-    .contacto__form textarea{
-        height: 150px;
-    }
-
-    .contacto__form button{
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    #contacto{
-        padding: 1.7rem;
-    }
-
-    .contacto__title{
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
-
-    .contacto__socialcard{
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-    .contacto__form textarea{
-        height: 100px;
-    }
-
+  .contacto__form textarea {
+    height: 100px;
+  }
 }

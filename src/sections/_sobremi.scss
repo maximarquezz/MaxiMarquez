@@ -1,111 +1,207 @@
-/*_sobremi.scss*/
-@use '../global/variables' as variables;
-@use '../global/utils' as utils;
-@use '../global/animations' as animations;
-@use '../components/card' as card;
-@use '../components/button' as button;
+/*_sobremi.scss - VERSIÓN MEJORADA*/
+@use "../global/variables" as variables;
+@use "../global/utils" as utils;
+@use "../global/animations" as animations;
+@use "../components/card" as card;
 
-#sobremi{
-    @extend .sections_w-and-h;
-    background-color: variables.$second-bg-color;
-    @extend .flex-row_spc-evly;
+#sobremi {
+  @extend .sections_w-and-h;
+  background-color: variables.$second-bg-color;
+  @extend .flex-col_center;
+  padding: 2rem;
 }
 
-    .sobremi__img-container{
-        @extend .profileimg_container-properties;
-    }
+.sobremi__title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 
-    .sobremi__img{
-        @extend .profileimg_properties;
-        @extend .animation_image-glow;
-    }
-
-    .sobremi__info{
-        height: 80vh;
-        padding: 1.7rem;
-        font-size: 3rem;
-        @extend .flex-col_center;
-    }
-
-    .sobremi__title{
-        text-align: center;
-        margin-bottom: 15px;
-
-        &--span{
-            @extend .animation_color-text_6s;
-        }
-    }
-
-    .sobremi__card{
-        @extend .card;
-    }
-
-    .sobremi__item{
-        padding: 10px;
-        list-style: none;
-        font-size: 1.1rem;
-
-        &--strong{
-            @extend .animation_color-text_two_6s;
-        }
-    }
-
-    .sobremi__more{
-        @extend .btn-secondary;
-    }
-
-@media screen and (max-width: 767px){
-
-    #sobremi{
-        flex-wrap: wrap;
-        height: fit-content;
-        padding: 2rem 1.7rem;
-    }
-
-    .sobremi__img-container{
-        display: none;
-    }
-
-    .sobremi__title{
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .sobremi__info{
-        padding: 0;
-        height: fit-content;
-        width: 100%;
-    }
-
-    .sobremi__card{
-        width: 100%;
-    }
-
-    .sobremi__item{
-        font-size: 1rem;
-        line-height: 2rem;
-        padding: 2px;
-    }
-
+  &--span {
+    @extend .animation_color-text_6s;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+// Grid de métricas principales
+.sobremi__metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+}
 
-    #sobremi{
-        padding: 1.7rem;
+.sobremi__metric-card {
+  background-color: variables.$bg-color;
+  padding: 2rem;
+  @extend .border-rad_20px;
+  text-align: center;
+  border-bottom: 3px solid variables.$main-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(14, 255, 255, 0.3);
+  }
+}
+
+.sobremi__metric-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: variables.$main-color;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  @extend .animation_color-text_two_6s;
+}
+
+.sobremi__metric-label {
+  font-size: 1.1rem;
+  color: variables.$text-color;
+  font-weight: 500;
+}
+
+.sobremi__metric-sublabel {
+  font-size: 0.85rem;
+  color: variables.$smalltext-color;
+  margin-top: 0.5rem;
+}
+
+// Stack tecnológico compacto
+.sobremi__tech-section {
+  width: 100%;
+  max-width: 1200px;
+  @extend .card;
+  padding: 2rem;
+}
+
+.sobremi__tech-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  span {
+    color: variables.$main-color;
+  }
+}
+
+.sobremi__tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.sobremi__tech-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: variables.$second-bg-color;
+  padding: 1rem;
+  @extend .border-rad_10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: variables.$main-color;
+    color: variables.$bg-color;
+
+    .sobremi__tech-years {
+      color: variables.$bg-color;
     }
+  }
+}
 
-    .sobremi__title{
-        font-size: 2rem;
-    }
+.sobremi__tech-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
 
-    .sobremi__item{
-        font-size: 1rem;
-    }
+.sobremi__tech-years {
+  font-size: 0.85rem;
+  color: variables.$main-color;
+  font-weight: bold;
+}
 
-    .sobremi__img-container{
-        width: 22rem;
-        height: 22rem;
-    }
+// Highlights rápidos (lo que hace diferente al dev)
+.sobremi__highlights {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
 
+.sobremi__highlight-tag {
+  background-color: variables.$bg-color;
+  color: variables.$text-color;
+  padding: 0.8rem 1.5rem;
+  @extend .border-rad_20px;
+  font-size: 0.9rem;
+  border: 2px solid variables.$main-color;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: variables.$main-color;
+    color: variables.$bg-color;
+  }
+}
+
+// Responsive
+@media screen and (max-width: 767px) {
+  #sobremi {
+    height: fit-content;
+    padding: 1.7rem;
+  }
+
+  .sobremi__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sobremi__metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sobremi__metric-card {
+    padding: 1.5rem;
+  }
+
+  .sobremi__metric-number {
+    font-size: 3rem;
+  }
+
+  .sobremi__metric-label {
+    font-size: 1rem;
+  }
+
+  .sobremi__tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobremi__highlights {
+    gap: 0.5rem;
+  }
+
+  .sobremi__highlight-tag {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #sobremi {
+    padding: 1.7rem;
+  }
+
+  .sobremi__title {
+    font-size: 2.5rem;
+  }
+
+  .sobremi__metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobremi__metric-number {
+    font-size: 3.5rem;
+  }
 }
